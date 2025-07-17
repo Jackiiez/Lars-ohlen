@@ -61,16 +61,16 @@ export default function Home() {
             <p>Valg af lån i ejerbolig</p>
             <p>Godkendelse af økonomi og meget mere</p>
           </div>
-          <img src="vinder.jpg" alt="" />
+          <img  src="vinder.jpg" alt="" />
         </section>
       </div>
 
       <div className="comming-soon-container">
         <div className="movies-grid">
           <div
-            ref={setCardRef(0)}
-            data-index={0}
-            className={`movie-card ${visibleCards.includes(0) ? 'visible' : ''}`}>
+            ref={setCardRef(1)}
+            data-index={1}
+            className={`movie-card ${visibleCards.includes(1) ? 'visible' : ''}`}>
             <img src="lars.jpg" alt="" />
             <div className="movie-info">
               <h3>Lorem, ipsum.</h3>
@@ -78,17 +78,7 @@ export default function Home() {
           </div>
 
           <div
-            ref={setCardRef(1)}
-            data-index={1}
-            className={`movie-card ${visibleCards.includes(1) ? 'visible' : ''}`}
-          >
-            <img src="lars.jpg" alt="" />
-            <div className="movie-info">
-              <h3>Lorem, ipsum.</h3>
-            </div>
-          </div>
-
-          <div ref={setCardRef(2)}
+            ref={setCardRef(2)}
             data-index={2}
             className={`movie-card ${visibleCards.includes(2) ? 'visible' : ''}`}
           >
@@ -98,8 +88,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div
-            ref={setCardRef(3)}
+          <div ref={setCardRef(3)}
             data-index={3}
             className={`movie-card ${visibleCards.includes(3) ? 'visible' : ''}`}
           >
@@ -107,8 +96,8 @@ export default function Home() {
             <div className="movie-info">
               <h3>Lorem, ipsum.</h3>
             </div>
-
           </div>
+
           <div
             ref={setCardRef(4)}
             data-index={4}
@@ -124,6 +113,17 @@ export default function Home() {
             ref={setCardRef(5)}
             data-index={5}
             className={`movie-card ${visibleCards.includes(5) ? 'visible' : ''}`}
+          >
+            <img src="lars.jpg" alt="" />
+            <div className="movie-info">
+              <h3>Lorem, ipsum.</h3>
+            </div>
+
+          </div>
+          <div
+            ref={setCardRef(6)}
+            data-index={6}
+            className={`movie-card ${visibleCards.includes(6) ? 'visible' : ''}`}
           >
             <img src="lars.jpg" alt="" />
             <div className="movie-info">
