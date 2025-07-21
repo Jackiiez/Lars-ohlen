@@ -9,10 +9,29 @@
     transform: translateY(0);
   }
 }
+h1{
+  font-size: 7rem;
+}
+
+h1  {
+
+
+  transition: transform 0.2s, color 0.2s;
+
+
+}
+h1:hover {
+  transform: scale(1.05);
+    cursor: pointer;
+}
+.content-container {
+  display: flex; 
+
+}
 
 .about {
+  flex: 1;
   text-align: center;
-  margin-top: 3rem;
 }
 
 .about h2 {
@@ -22,69 +41,59 @@
 }
 
 .about p {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  margin-right: 3rem;
 }
 
-.comming-soon-container {
-  color: #fff;
-  padding: 20px;
-}
-
-.comming-soon-container h2 {
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-}
-
-.movies-grid {
+.image-container {
+  flex: 1;
   display: flex;
-  flex-direction: row;
-  overflow-x: auto;
-  gap: 20px;
-  padding-bottom: 10px;
+  gap: 1rem;
+}
+
+.main-image-container {
+  flex: 1;
+  display: flex;
+    justify-content: end;
+  align-items: center;
+  gap: 1rem;
+}
+
+.main-image {
+
+    width: 25vh;
+    height: 50vh;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.grid-images {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.grid-images img {
+    width: 25vh;
+    height: 50vh;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin: 0;
+  justify-self: center;
+    align-self: center;
+}
+
+.champagne {
+  margin-bottom: 0.5rem; 
 }
 
 .movie-card {
-  flex-shrink: 0;
   opacity: 0;
   transform: translateY(10px);
-   
 }
-.movie-card img{
-      border-radius: 1rem;
-}
-
-.movie-card.visible {
-  animation: fadeIn 0.8s ease forwards;
-}
-
-.movie-card:nth-child(1).visible {
-  animation-delay: 0s;
-}
-
-.movie-card:nth-child(2).visible {
-  animation-delay: 0.2s;
-}
-
-.movie-card:nth-child(3).visible {
-  animation-delay: 0.4s;
-}
-
-.movie-card:nth-child(4).visible {
-  animation-delay: 0.6s;
-}
-
-.movie-card img {
-  min-width: 250px;
-  max-width: 600px;
-  height: 90%;
-  object-fit: cover;
-  transition: transform 0.2s, color 0.2s;
-
-
-}
-
 .movie-card img  {
- margin-left: 1rem;
+
   margin-top:1rem;
 
   transition: transform 0.2s, color 0.2s;
@@ -96,21 +105,8 @@
     cursor: pointer;
 }
 
-
-.movie-card .movie-info {
-  padding: 10px;
-}
-
-.movie-card .movie-info h3 {
-  font-size: 16px;
-  margin: 0;
-  font-weight: 600;
-}
-
-.movie-card .movie-info p {
-  color: #bbb;
-  font-size: 14px;
-  margin-top: 5px;
+.movie-card.visible {
+  animation: fadeIn 0.8s ease forwards;
 }
 
 .hero {
@@ -126,45 +122,11 @@
   animation: fadeIn 2.5s ease-out;
 }
 
-.hero h1 {
-  font-size: 8rem;
-  margin-bottom: 20px;
-  animation: fadeIn 2s ease-out;
-  margin-bottom: 5rem;
-  cursor: pointer;
-  transition: transform 0.2s, color 0.2s;
-}
-
-.hero h1:hover {
-  transform: scale(1.05);
-}
-
 .hero-content {
   max-width: 80vw;
   padding: 20px;
   margin: 0 auto;
   border-radius: 10px;
-}
-
-.hero-content section {
-  display: grid;
-  grid-auto-flow: column;
-  width: 100%;
-  gap: 2rem;
-
-}
-
-.hero-content section img {
-  max-width: 500px;
-  height: 100%;
-  justify-self: center;
-}
-
-
-
-.hero-content p {
-  font-size: 1.5rem;
-  margin-bottom: 40px;
 }
 
 .hero-content .cta-button {
@@ -179,36 +141,47 @@
 .hero-content .cta-button:hover {
   background-color: #005bb5;
 }
-
+@media (max-width:1200px){
+ .image-container {
+    flex-direction: column;
+    display: block;
+    
+  }.main-image-container{
+      justify-content: center;
+  }}
 @media (max-width: 768px) {
+  .grid-images {
+   
+    display: none;
+}
   .hero {
-    height: 70vh;
+    height: 60vh;
   }
 
-  .hero .hero-content {
+  .hero-content {
     max-width: 90%;
     padding: 10px;
   }
 
-  .hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 5rem;
+  .about h2 {
+    font-size: 3rem;
   }
 
-  .hero p {
-    font-size: 1.2rem;
+  .about p {
+    font-size: 1.5rem;
+    margin-right: 0;
   }
 
-  .hero-content section img {
-    height: 60vh;
-  }
+ 
 
-  .hero-content section {
-    grid-auto-flow: row;
+  .image-container {
+    flex-direction: column;
+    
   }
-
-  .movie-card img {
-    max-width: 250px;
+ 
+  
+  .main-image-container{
+      justify-content: center;
   }
 }
 
@@ -216,25 +189,23 @@
   .hero {
     height: 60vh;
   }
-
-  .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 15rem;
+.main-image-container{
+      justify-content: center;
+  }
+  .about h2 {
+    font-size: 2rem;
   }
 
-  .hero p {
+  .about p {
     font-size: 1rem;
   }
 
-  .hero-content section img {
+  .main-image {
     height: 40vh;
+            margin-left: 2rem;
   }
 
-  .hero-content section {
-    grid-auto-flow: row;
-  }
-
-  .movie-card img {
-    max-width: 200px;
+  .grid-images img {
+    height: 50vh;
   }
 }

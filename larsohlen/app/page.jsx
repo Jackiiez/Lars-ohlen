@@ -48,24 +48,33 @@ export default function Home() {
         <h1>Lars Ohlen</h1>
       </div>
 
-      <div className="hero-content">
-        <section ref={setCardRef(0)}
-          data-index={0}
-          className={`movie-card ${visibleCards.includes(0) ? 'visible' : ''}`}   >
-          <div className="about">
-            <h2 className="about__heading">småt om mig</h2>
-            <p>Dedikeret Fodboldgolfer med øgenavnet LAS</p>
-            <p>Tidligere Maraton-løber og badmintonspiller</p>
-            <p>Realkreditnørd med meget mere</p>
-            <p>Altid klar med et godt råd om boligkøb</p>
-            <p>Valg af lån i ejerbolig</p>
-            <p>Godkendelse af økonomi og meget mere</p>
-          </div>
-          <img  src="vinder.jpg" alt="" />
-        </section>
+   <div className="hero-content">
+  <section ref={setCardRef(0)} data-index={0} className={`movie-card ${visibleCards.includes(0) ? 'visible' : ''}`}>
+    <div className="content-container">
+      <div className="about">
+        <h2 className="about__heading">småt om mig</h2>
+        <p>Dedikeret Fodboldgolfer med øgenavnet LAS</p>
+        <p>Tidligere Maraton-løber og badmintonspiller</p>
+        <p>Realkreditnørd med meget mere</p>
+        <p>Altid klar med et godt råd om boligkøb</p>
+        <p>Valg af lån i ejerbolig</p>
+        <p>Godkendelse af økonomi og meget mere</p>
       </div>
+      <div className="image-container">
+        <div className="main-image-container">
+          <img  className="main-image" src="vinder.jpg" alt="Main Image" />
+        </div>
+        <div className="grid-images">
+          <img className="champagne" src="champange.jpg" alt="Champagne" />
+          <img className="kærlighed" src="kærlighed.jpg" alt="Kærlighed" />
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
 
-      <div className="comming-soon-container">
+
+      {/* <div className="comming-soon-container">
         <div className="movies-grid">
           <div
             ref={setCardRef(1)}
@@ -132,7 +141,7 @@ export default function Home() {
 
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
