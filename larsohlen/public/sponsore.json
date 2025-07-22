@@ -1,0 +1,55 @@
+{
+  "sponsors": [
+    {
+      "id": 1,
+      "name": "Frederiksund Fodbold-Golf",
+      "img": "frederikssund-logo_logo-facebook___serialized1.jpg",
+   "facebook": "https://facebook.com",
+      "link": "https://frederikssundfodboldgolf.dk/"
+    },
+    {
+      "id": 2,
+      "name": "Tom Pihl",
+      "img": "dsc-0834-tom-2-300x227-1.jpg",
+  "facebook": "https://facebook.com",
+      "link": "https://kiropraktor2750.dk/hvem-er-vi/"
+    },
+    {
+      "id": 3,
+      "name": "Jysk Lokal Forsikring",
+      "img": "Jysk.jpg",
+  "facebook": "https://facebook.com",
+      "link": "https://jysklokalforsikring.dk/"
+    },
+    {
+      "id": 4,
+      "name": "Select Sport",
+      "img": "1736_x2.jpg",
+  "facebook": "https://facebook.com",
+      "link": "https://dk.select-sport.com/"
+    },
+    {
+      "id": 5,
+      "name": "CPH RUN SHOP",
+      "img": "CPHRUNSHOP.jpg",
+     "facebook": "https://facebook.com",
+      "link": "https://cphrunshop.dk/"
+      
+    },
+    {
+      "id": 6,
+      "name": "Real Mælgerne",
+      "img": "images.png",
+        "facebook": "https://facebook.com",
+      "link": "https://www.realmaeglerne.dk/"
+    },
+    {
+      "id": 7,
+      "name": "A SIGN A/S",
+      "img": "AS.jpg",
+   "facebook": "https://facebook.com",
+      "link": "https://a-sign.dk/"
+    }
+ 
+  ]
+}

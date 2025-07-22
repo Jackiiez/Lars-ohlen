@@ -84,17 +84,17 @@
     transition: all 0.3s ease;
 }
 
-.burger-menu.open .burger-icon:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-}
+// .burger-menu.open .burger-icon:nth-child(1) {
+//     transform: rotate(45deg) translate(5px, 5px);
+// }
 
-.burger-menu.open .burger-icon:nth-child(2) {
-    opacity: 0;
-}
+// .burger-menu.open .burger-icon:nth-child(2) {
+//     opacity: 0;
+// }
 
-.burger-menu.open .burger-icon:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
-}
+// .burger-menu.open .burger-icon:nth-child(3) {
+//     transform: rotate(-45deg) translate(5px, -5px);
+// }
 
 @media (max-width: 768px) {
     .burger-menu {
@@ -104,7 +104,7 @@
         z-index: 11;
     position: fixed;
     
-            left: 38vh;
+                    left: 85vw;
     }
 
     .navbar {

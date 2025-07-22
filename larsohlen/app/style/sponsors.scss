@@ -1,0 +1,70 @@
+.card__div {
+    grid-column: 2;
+    grid-row: 1;
+    align-content: center;
+}
+
+.placeholder {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.placeholder {
+    max-width: 250px;
+
+    border-radius: 5rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    min-height: 200px;
+}
+
+.card {
+ max-width: 50%;
+    margin: 0 auto;
+    display: grid
+;
+    justify-content: center;
+    gap: 2rem;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    font-size: 4rem;
+ 
+
+}
+.cardtitle, .cardtext{
+    color: white;
+  
+
+}
+
+
+@media (max-width: 768px) {
+    .card {
+
+        max-width: 100%;
+       justify-content: center;
+        display: grid;
+        gap: 10px;
+    }
+
+    .placeholder {
+        max-width: 250px;
+        margin: 0 auto;
+        margin-bottom: 2.5rem;
+      
+       
+    }
+    .cardtitle{
+        font-size: 34px;
+    }
+    .card__div{
+        grid-column: 1;
+    grid-row: 2;
+    }
+    .cardtitle,.cardtext{
+            text-align: center;
+    }
+}
