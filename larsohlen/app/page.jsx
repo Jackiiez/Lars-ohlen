@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect, useRef } from 'react';
-import Lightbox from './componets/lightbox';
+import Lightbox from './components/lightbox';
 
 
 export default function Home() {

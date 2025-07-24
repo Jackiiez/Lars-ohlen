@@ -1,8 +1,7 @@
 export default function Fodboldgolf() {
   return (
     <>
-  <h2>
-    Fodboldgolferen LAS ⚽️⛳️🕳
+  <h2>Fodboldgolferen LAS ⚽️⛳️🕳
   </h2>
   <p>•	Verdensmester i 55+ 
 •	40 podier🏆
