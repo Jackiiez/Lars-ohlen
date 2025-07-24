@@ -1,10 +1,16 @@
 "use client";
 import { useState, useEffect, useRef } from 'react';
+import Lightbox from './componets/lightbox';
+
 
 export default function Home() {
   const [visibleCards, setVisibleCards] = useState([]);
+  const [isLightboxOpen, setLightboxOpen] = useState(false);
+  const [lightboxImages, setLightboxImages] = useState([]);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const cardRefs = useRef([]);
 
+  //animation on load
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -28,120 +34,66 @@ export default function Home() {
     return () => observer.disconnect();
   }, []);
 
-  const setCardRef = (index) => (el) => {
-    cardRefs.current[index] = el;
-  };
 
 
 
+  //lightbox
+  // Reference to store DOM elements for each card
+const setCardRef = (index) => (el) => {
+  // Assign the current element (el) to the cardRefs array at the specified index
+  cardRefs.current[index] = el;
+};
 
+// Function to open the lightbox with specified images and the index of the current image
+const openLightbox = (images, index) => {
+  // Set the images to be displayed in the lightbox
+  setLightboxImages(images);
+  // Set the index of the currently displayed image
+  setCurrentImageIndex(index);
+  // Open the lightbox
+  setLightboxOpen(true);
+};
 
+// Function to close the lightbox
+const closeLightbox = () => {
+  // Set the state to close the lightbox
+  setLightboxOpen(false);
+};
 
-
-
+  
 
   return (
     <>
-
-
       <div className="hero">
         <h1>Lars Ohlen</h1>
       </div>
 
-   <div className="hero-content">
-  <section ref={setCardRef(0)} data-index={0} className={`movie-card ${visibleCards.includes(0) ? 'visible' : ''}`}>
-    <div className="content-container">
-      <div className="about">
-        <h2 className="about__heading">småt om mig</h2>
-        <p>Dedikeret Fodboldgolfer med øgenavnet LAS</p>
-        <p>Tidligere Maraton-løber og badmintonspiller</p>
-        <p>Realkreditnørd med meget mere</p>
-        <p>Altid klar med et godt råd om boligkøb</p>
-        <p>Valg af lån i ejerbolig</p>
-        <p>Godkendelse af økonomi og meget mere</p>
+      <div className="hero-content">
+        <section ref={setCardRef(0)} data-index={0} className={`movie-card ${visibleCards.includes(0) ? 'visible' : ''}`}>
+          <div className="content-container">
+            <div className="about">
+              <h2 className="about__heading">småt om mig</h2>
+              <p>Dedikeret Fodboldgolfer med øgenavnet LAS</p>
+              <p>Tidligere Maraton-løber og badmintonspiller</p>
+              <p>Realkreditnørd med meget mere</p>
+              <p>Altid klar med et godt råd om boligkøb</p>
+              <p>Valg af lån i ejerbolig</p>
+              <p>Godkendelse af økonomi og meget mere</p>
+            </div>
+            <div className="image-container">
+              <div className="main-image-container">
+                <img className="main-image" src="vinder.jpg" alt="Main Image" onClick={() => openLightbox(['vinder.jpg'], 0)} />
+              </div>
+              <div className="grid-images">
+                <img className="champagne" src="champange.jpg" alt="Champagne" onClick={() => openLightbox(['champange.jpg'], 0)} />
+                <img className="kærlighed" src="kærlighed.jpg" alt="Kærlighed" onClick={() => openLightbox(['kærlighed.jpg'], 0)} />
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-      <div className="image-container">
-        <div className="main-image-container">
-          <img  className="main-image" src="vinder.jpg" alt="Main Image" />
-        </div>
-        <div className="grid-images">
-          <img className="champagne" src="champange.jpg" alt="Champagne" />
-          <img className="kærlighed" src="kærlighed.jpg" alt="Kærlighed" />
-        </div>
-      </div>
-    </div>
-  </section>
-</div>
 
-
-      {/* <div className="comming-soon-container">
-        <div className="movies-grid">
-          <div
-            ref={setCardRef(1)}
-            data-index={1}
-            className={`movie-card ${visibleCards.includes(1) ? 'visible' : ''}`}>
-            <img src="lars.jpg" alt="" />
-            <div className="movie-info">
-              <h3>Lorem, ipsum.</h3>
-            </div>
-          </div>
-
-          <div
-            ref={setCardRef(2)}
-            data-index={2}
-            className={`movie-card ${visibleCards.includes(2) ? 'visible' : ''}`}
-          >
-            <img src="lars.jpg" alt="" />
-            <div className="movie-info">
-              <h3>Lorem, ipsum.</h3>
-            </div>
-          </div>
-
-          <div ref={setCardRef(3)}
-            data-index={3}
-            className={`movie-card ${visibleCards.includes(3) ? 'visible' : ''}`}
-          >
-            <img src="lars.jpg" alt="" />
-            <div className="movie-info">
-              <h3>Lorem, ipsum.</h3>
-            </div>
-          </div>
-
-          <div
-            ref={setCardRef(4)}
-            data-index={4}
-            className={`movie-card ${visibleCards.includes(4) ? 'visible' : ''}`}
-          >
-            <img src="lars.jpg" alt="" />
-            <div className="movie-info">
-              <h3>Lorem, ipsum.</h3>
-            </div>
-
-          </div>
-          <div
-            ref={setCardRef(5)}
-            data-index={5}
-            className={`movie-card ${visibleCards.includes(5) ? 'visible' : ''}`}
-          >
-            <img src="lars.jpg" alt="" />
-            <div className="movie-info">
-              <h3>Lorem, ipsum.</h3>
-            </div>
-
-          </div>
-          <div
-            ref={setCardRef(6)}
-            data-index={6}
-            className={`movie-card ${visibleCards.includes(6) ? 'visible' : ''}`}
-          >
-            <img src="lars.jpg" alt="" />
-            <div className="movie-info">
-              <h3>Lorem, ipsum.</h3>
-            </div>
-
-          </div>
-        </div>
-      </div> */}
+      <Lightbox images={lightboxImages} isOpen={isLightboxOpen} onClose={closeLightbox} />
     </>
   );
 }

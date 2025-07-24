@@ -26,9 +26,9 @@ export default function Featured() {
         <div className='cards'>
           <h2>Mine Stolte Sponsore!</h2>
             {cards.map((card, index) => (
-                <div className="card" key={index}><h3 className='cardtitle'>{card.name}</h3>
+                
                    
-                    <div className="card__div">
+                    <div className="card__div"><div className="card" key={index}><h3 className='cardtitle'>{card.name}</h3>
                         <Link href={card.link} >
                        
                     <img className='placeholder' src={card.img} alt={`${card.name} Image`} /></Link>

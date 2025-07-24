@@ -3,7 +3,9 @@ import "./style/nav.scss";
 import "./style/globals.css";
 import "./style/hero.scss";
 import "./style/sponsors.scss";
+import "./style/lightbox.scss";
 import NavBar from "./componets/NavBar";
+import Footer from "./componets/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,6 +29,7 @@ export default function RootLayout({ children }) {
           <link href="https://fonts.googleapis.com/css2?family=Segoe:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
         <NavBar />
         {children}
+        <Footer/>
       </body>
     </html>
   );
