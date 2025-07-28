@@ -6,15 +6,7 @@ const Lightbox = ({ images, isOpen, onClose }) => {
 
   if (!isOpen || !images || images.length === 0) return null;
 
-  const handleNext = () => {
-    console.log("Next button clicked");
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
 
-  const handlePrev = () => {
-    console.log("Previous button clicked");
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
-  };
 
   return (
     <div className="overlay">

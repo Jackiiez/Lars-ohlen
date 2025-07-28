@@ -24,11 +24,12 @@ export default function Featured() {
 
     return (
         <div className='cards'>
-          <h2 className='sponsore-heading'>Mine Stolte Sponsore!</h2>
+          <h2 className='sponsore-heading'>Mine stolte sponsorer!</h2>
             {cards.map((card, index) => (
                 
                    
                     <div key={index} className="card__div"><div className="card" key={index}><h3 className='cardtitle'>{card.name}</h3>
+                    <p className='cardtitle'>{card.text}</p>
                         <Link href={card.link} >
                        
                     <img className='placeholder' src={card.img} alt={`${card.name} Image`} /></Link>

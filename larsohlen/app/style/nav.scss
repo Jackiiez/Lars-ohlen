@@ -2,7 +2,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(95deg,  #5E35B1, #7E57C2, #FF6F61);
+    background: linear-gradient(95deg, #5E35B1, #7E57C2, #FF6F61);
     opacity: 0;
     animation: fadeIn 2s ease forwards;
 }
@@ -17,6 +17,7 @@
         transform: translateY(0);
     }
 }
+
 
 .navbar-title {
     width: 100%;
@@ -39,8 +40,7 @@
 .navbar-item {
     text-align: center;
     flex-grow: 1;
-    opacity: 0;
-    animation: fadeIn 2.5s ease forwards;
+    position: relative; // Keep relative for dropdown positioning
 }
 
 .navbar-item:nth-child(1) { animation-delay: 0.1s; }
@@ -58,15 +58,7 @@
 }
 
 .navbar-link:hover {
-    color: white; 
     transform: translateY(-4px);
-}
-
-@media (max-width: 768px) {
-    .navbar-list {
-        flex-direction: column;
-        align-items: center;
-    }
 }
 
 .burger-menu {
@@ -84,29 +76,83 @@
     transition: all 0.3s ease;
 }
 
-@media (max-width: 768px) {
+.navbar-dropdown {
+    display: none; 
+    position: absolute;
+    left: 50%; // Center horizontally
+    transform: translateX(-50%); // Center adjustment
+    top: 105%;
+    z-index: 100; 
+    background: white; // Add a background for visibility
+    border: 1px solid #ccc; // Optional: Add a border for better visibility
+    border-radius: 4px; // Optional: Round the corners
+
+}
+
+
+.navbar-item:hover .navbar-dropdown {
+    display: block; // Show the dropdown on hover
+}
+
+.navbar-dropdown li {
+    padding: 8px;
+    text-align: center; // Center text in dropdown items
+}
+
+@media (max-width: 500px) {
+    .navbar-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-dropdown {
+        position: static; // Keep it static for mobile
+        max-height: 100px; // Limit height
+        overflow: hidden; // Prevent overflow if items exceed max height
+        margin-left: 50%;
+    min-width: 100px;
+background: none;
+border: none;
+    }
+.navbar-item a{
+    color: white;
+}
+.navbar-link{
+        align-self: center;
+}
+.navbar-dropdown li {
+    padding: 0px;
+}
+    .navbar-item.active .navbar-dropdown {
+        display: block; /* Show dropdown when active */
+    }
+.navbar-item p{
+    font-size: 2rem;
+}
     .burger-menu {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         z-index: 11;
-    position: fixed;
-    
-                    left: 85vw;
+        position: fixed;
+        left: 85vw;
     }
 
     .navbar {
         display: none;
-            animation: none;
-            opacity: 1;
+        animation: none;
+        opacity: 1;
     }
-    .navbar-link{
-            align-self: center;
+
+    .navbar-item {
+        animation: none;
+        opacity: 1;
+        display: grid;
     }
-    .navbar-item{
-        display: grid
-;
-    }
+    .contact-info {
+    text-align: center;
+  display: block !important;
+}
 
     .navbar.open {
         display: flex;
@@ -114,11 +160,12 @@
         height: 100vh;
         position: fixed;
         z-index: 10;
-        
     }
-.navbar ul{
-    height: 100vh;
-}
+
+    .navbar ul {
+        height: 100%;
+    }
+
     .hero.hidden {
         display: none; 
     }
@@ -126,6 +173,9 @@
     .heroContent.hidden {
         display: none;
     }
+
+    .navbar-dropdown {
+        display: grid; // Use grid layout for dropdown items
+        justify-items: center; // Center items in the dropdown
+    }
 }
-
-

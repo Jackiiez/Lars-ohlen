@@ -1,0 +1,147 @@
+{
+  "sections": [
+    {
+      "heading": "Sports Equipment",
+      "galleryItems": [
+        {
+          "id": 1,
+          "title": "Select Sport",
+          "image": "1736_x2.jpg",
+          "description": "A great place for sports equipment.",
+          "link": "https://dk.select-sport.com/"
+        },
+        {
+          "id": 5,
+          "title": "Select Sport",
+          "image": "1736_x2.jpg",
+          "description": "A great place for sports equipment.",
+          "link": "https://dk.select-sport.com/"
+        },
+        {
+          "id": 5,
+          "title": "Select Sport",
+          "image": "1736_x2.jpg",
+          "description": "A great place for sports equipment.",
+          "link": "https://dk.select-sport.com/"
+        },
+        {
+          "id": 5,
+          "title": "Select Sport",
+          "image": "1736_x2.jpg",
+          "description": "A great place for sports equipment.",
+          "link": "https://dk.select-sport.com/"
+        },
+        {
+          "id": 5,
+          "title": "Select Sport",
+          "image": "1736_x2.jpg",
+          "description": "A great place for sports equipment.",
+          "link": "https://dk.select-sport.com/"
+        },
+        {
+          "id": 5,
+          "title": "Select Sport",
+          "image": "1736_x2.jpg",
+          "description": "A great place for sports equipment.",
+          "link": "https://dk.select-sport.com/"
+        },
+        {
+          "id": 5,
+          "title": "Select Sport",
+          "image": "1736_x2.jpg",
+          "description": "A great place for sports equipment.",
+          "link": "https://dk.select-sport.com/"
+        }
+      ]
+    },
+
+
+
+    
+    {
+      "heading": "Local Insurance Services",
+      "galleryItems": [
+        {
+          "id": 2,
+          "title": "Jysk Lokal Forsikring",
+          "image": "Jysk.jpg",
+          "description": "Local insurance services.",
+          "link": "https://jysklokalforsikring.dk/"
+        },     {
+          "id": 2,
+          "title": "Jysk Lokal Forsikring",
+          "image": "Jysk.jpg",
+          "description": "Local insurance services.",
+          "link": "https://jysklokalforsikring.dk/"
+        },     {
+          "id": 2,
+          "title": "Jysk Lokal Forsikring",
+          "image": "Jysk.jpg",
+          "description": "Local insurance services.",
+          "link": "https://jysklokalforsikring.dk/"
+        },     {
+          "id": 2,
+          "title": "Jysk Lokal Forsikring",
+          "image": "Jysk.jpg",
+          "description": "Local insurance services.",
+          "link": "https://jysklokalforsikring.dk/"
+        },
+        {
+          "id": 3,
+          "title": "Jysk Lokal Forsikring",
+          "image": "Jysk.jpg",
+          "description": "Local insurance services.",
+          "link": "https://jysklokalforsikring.dk/"
+        },
+        {
+          "id": 4,
+          "title": "Jysk Lokal Forsikring",
+          "image": "Jysk.jpg",
+          "description": "Local insurance services.",
+          "link": "https://jysklokalforsikring.dk/",
+          "heading": "Fodbold-golf"
+        },
+        {
+          "id": 7,
+          "title": "Jysk Lokal Forsikring",
+          "image": "Jysk.jpg",
+          "description": "Local insurance services.",
+          "link": "https://jysklokalforsikring.dk/"
+        },
+        {
+          "id": 8,
+          "title": "Jysk Lokal Forsikring",
+          "image": "Jysk.jpg",
+          "description": "Local insurance services.",
+          "link": "https://jysklokalforsikring.dk/",
+          "heading": "Fodbold"
+        }
+      ]
+    },
+
+
+
+
+
+    {
+      "heading": "Travel Destinations",
+      "galleryItems": [
+        {
+          "id": 9,
+          "title": "Beautiful Beaches",
+          "image": "beach.jpg",
+          "description": "Explore the stunning beaches around the world.",
+          "link": "https://example.com/beaches"
+        },
+        {
+          "id": 10,
+          "title": "Mountain Adventures",
+          "image": "mountain.jpg",
+          "description": "Experience breathtaking mountain views.",
+          "link": "https://example.com/mountains"
+        }
+      ]
+    }
+  ]
+}
+

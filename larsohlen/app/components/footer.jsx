@@ -9,8 +9,9 @@ const Footer = () => {
       <div className="footer-content">     <hr className="divider-one" />
         <div className="contact-info">
            
-          <p>55555555</p>
+          <p>60 68 66 60</p>
           <p>Facebook.com</p>
+          <p>mail.com</p>
         </div>
         <hr className="divider" />
         <div className="footer-details">
