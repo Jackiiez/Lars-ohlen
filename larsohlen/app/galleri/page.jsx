@@ -47,8 +47,12 @@ export default function Galleri() {
         {Array.isArray(sections) && sections.length > 0 ? (
           sections.map(section => (
             <div key={section.heading} className="gallery-section">
+
+
+              
               <h2 className="section-heading">{section.heading}</h2>
               <div className="gallery">
+
                 {section.galleryItems.map(item => (
                   <div key={item.id} className="gallery-item" ref={setCardRef(item.id)}>
                     <img
