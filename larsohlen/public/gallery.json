@@ -1,7 +1,7 @@
 {
   "sections": [
     {
-      "heading": "Sports Equipment",
+      "heading": "Blandet fodboldgolf",
       "galleryItems": [
         {
           "id": 1,
@@ -11,7 +11,21 @@
           "link": "https://dk.select-sport.com/"
         },
         {
-          "id": 5,
+          "id": 2,
+          "title": "Select Sport",
+          "image": "1736_x2.jpg",
+          "description": "A great place for sports equipment.",
+          "link": "https://dk.select-sport.com/"
+        },
+        {
+          "id": 3,
+          "title": "Gode",
+          "image": "1736_x2.jpg",
+          "description": "A great place for sports equipment.",
+          "link": "https://dk.select-sport.com/"
+        },
+        {
+          "id": 4,
           "title": "Select Sport",
           "image": "1736_x2.jpg",
           "description": "A great place for sports equipment.",
@@ -25,28 +39,14 @@
           "link": "https://dk.select-sport.com/"
         },
         {
-          "id": 5,
+          "id": 6,
           "title": "Select Sport",
           "image": "1736_x2.jpg",
           "description": "A great place for sports equipment.",
           "link": "https://dk.select-sport.com/"
         },
         {
-          "id": 5,
-          "title": "Select Sport",
-          "image": "1736_x2.jpg",
-          "description": "A great place for sports equipment.",
-          "link": "https://dk.select-sport.com/"
-        },
-        {
-          "id": 5,
-          "title": "Select Sport",
-          "image": "1736_x2.jpg",
-          "description": "A great place for sports equipment.",
-          "link": "https://dk.select-sport.com/"
-        },
-        {
-          "id": 5,
+          "id": 7,
           "title": "Select Sport",
           "image": "1736_x2.jpg",
           "description": "A great place for sports equipment.",
@@ -59,42 +59,42 @@
 
     
     {
-      "heading": "Local Insurance Services",
+      "heading": "Gode stunder",
       "galleryItems": [
         {
-          "id": 2,
+          "id": 8,
           "title": "Jysk Lokal Forsikring",
           "image": "Jysk.jpg",
           "description": "Local insurance services.",
           "link": "https://jysklokalforsikring.dk/"
         },     {
-          "id": 2,
+          "id": 9,
+          "title": "Familie",
+          "image": "Jysk.jpg",
+          "description": "Local insurance services.",
+          "link": "https://jysklokalforsikring.dk/"
+        },     {
+          "id": 10,
           "title": "Jysk Lokal Forsikring",
           "image": "Jysk.jpg",
           "description": "Local insurance services.",
           "link": "https://jysklokalforsikring.dk/"
         },     {
-          "id": 2,
-          "title": "Jysk Lokal Forsikring",
-          "image": "Jysk.jpg",
-          "description": "Local insurance services.",
-          "link": "https://jysklokalforsikring.dk/"
-        },     {
-          "id": 2,
+          "id": 11,
           "title": "Jysk Lokal Forsikring",
           "image": "Jysk.jpg",
           "description": "Local insurance services.",
           "link": "https://jysklokalforsikring.dk/"
         },
         {
-          "id": 3,
+          "id": 12,
           "title": "Jysk Lokal Forsikring",
           "image": "Jysk.jpg",
           "description": "Local insurance services.",
           "link": "https://jysklokalforsikring.dk/"
         },
         {
-          "id": 4,
+          "id": 13,
           "title": "Jysk Lokal Forsikring",
           "image": "Jysk.jpg",
           "description": "Local insurance services.",
@@ -102,14 +102,14 @@
           "heading": "Fodbold-golf"
         },
         {
-          "id": 7,
+          "id": 14,
           "title": "Jysk Lokal Forsikring",
           "image": "Jysk.jpg",
           "description": "Local insurance services.",
           "link": "https://jysklokalforsikring.dk/"
         },
         {
-          "id": 8,
+          "id": 15,
           "title": "Jysk Lokal Forsikring",
           "image": "Jysk.jpg",
           "description": "Local insurance services.",
@@ -124,7 +124,7 @@
 
 
     {
-      "heading": "Travel Destinations",
+      "heading": "Blandet fodbold",
       "galleryItems": [
         {
           "id": 9,

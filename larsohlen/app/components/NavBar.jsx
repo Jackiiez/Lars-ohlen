@@ -38,8 +38,9 @@ export default function NavBar() {
                             <p>Fodboldgolf</p>
                         </Link>
                         <ul className={`navbar-dropdown ${activeItem === 1 ? 'active' : ''}`}>
-                            <li><Link href="/subpage3">Titler</Link></li>
-                            <li><Link href="/subpage4">Baner</Link></li>
+                              <li><Link href="/bog" onClick={() => setIsOpen(false)}>Jeg er med i en bog!</Link></li>
+                            <li><Link href="/titler" onClick={() => setIsOpen(false)}>Titler</Link></li>
+                            <li><Link href="/baner" onClick={() => setIsOpen(false)}>Baner</Link></li>
                           
                     
                         </ul>
@@ -55,8 +56,8 @@ export default function NavBar() {
                             <p>Galleri</p>
                         </Link>
                         <ul className={`navbar-dropdown ${activeItem === 3 ? 'active' : ''}`}>
-                            <li><Link href="/subpage7">billeder</Link></li>
-                            <li><Link href="/subpage8">videoer</Link></li>
+                            <li><Link href="/billeder" onClick={() => setIsOpen(false)}>billeder</Link></li>
+                            <li><Link href="/video" onClick={() => setIsOpen(false)}>videoer</Link></li>
                         </ul>
                     </li>
                     <li className="navbar-item" onClick={() => handleItemClick(4)}>
@@ -64,10 +65,10 @@ export default function NavBar() {
                             <p>Fodbold</p>
                         </Link>
                         <ul className={`navbar-dropdown ${activeItem === 4 ? 'active' : ''}`}>
-                            <li><Link href="/subpage9">Brøndby</Link></li>
-                            <li><Link href="/subpage9">Barcalona</Link></li>
-                            <li><Link href="/subpage9">Liverpool</Link></li>
-                            <li><Link href="/subpage10">FIF</Link></li>
+                            <li><Link href="/broenby" onClick={() => setIsOpen(false)}>Brøndby</Link></li>
+                            <li><Link href="/barcelona" onClick={() => setIsOpen(false)}>Barcalona</Link></li>
+                            <li><Link href="/liverpool" onClick={() => setIsOpen(false)}>Liverpool</Link></li>
+                            <li><Link href="/fif" onClick={() => setIsOpen(false)}>FIF</Link></li>
                         </ul>
                     </li>
                     <li className="navbar-item"onClick={() => handleItemClick(5)} >

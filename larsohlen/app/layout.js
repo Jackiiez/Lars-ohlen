@@ -5,6 +5,9 @@ import "./style/hero.scss";
 import "./style/sponsors.scss";
 import "./style/lightbox.scss";
 import "./style/gallery.scss";
+import "./style/bog.scss";
+import "./style/baner.scss";
+import "./style/fodboldgolf.scss";
 import NavBar from "./components/NavBar";
 import Footer from "./components/footer";
 

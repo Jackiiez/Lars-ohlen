@@ -1,0 +1,61 @@
+.section {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2rem;
+
+    .content {
+        display: grid;
+        justify-items: center;
+        text-align: center;
+
+        .title {
+            font-size: 5rem;
+
+            @media (max-width: 480px) {
+                font-size: 3rem;
+            }
+        }
+        .image-grid{
+                justify-content: center;
+        }
+        .section .image-grid img {
+    height: auto;
+    min-width: 240px;
+}
+
+        .subtitle {
+            font-size: calc(5rem * 0.3); // 30% of h1's desktop size
+
+            @media (max-width: 480px) {
+                font-size: calc(3rem * 0.3); // 30% of h1's mobile size
+            }
+        }
+
+        .note {
+            margin: 0;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .image-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+        width: 100%;
+        max-width: 40vw; // Ensures the overall div is responsive
+justify-self: center;
+justify-content: center;
+    gap: 2rem;
+        img {
+           min-width: 240px;
+            height: auto; // Maintains aspect ratio
+        }
+    }
+}
+     @media (max-width: 480px) {
+         .section .image-grid img {
+   
+    min-width: 150px;
+}
+     }
+

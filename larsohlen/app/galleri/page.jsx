@@ -43,7 +43,7 @@ export default function Galleri() {
   return (
     <>
       <div className="gallery-container">
-        <h2 className="gallery-title">Gallery</h2>
+        <h2 className="gallery-title">Velkommen til højdepunkter og gode minder i mit liv </h2>
         {Array.isArray(sections) && sections.length > 0 ? (
           sections.map(section => (
             <div key={section.heading} className="gallery-section">
@@ -61,11 +61,7 @@ export default function Galleri() {
                       className="gallery-image"
                       onClick={() => openLightbox([item.image], 0)}
                     />
-                    <div className="gallery-info">
-                      <h3 className="gallery-title">{item.title}</h3>
-                      <p className="gallery-description">{item.description}</p>
-                   
-                    </div>
+                  
                   </div>
                 ))}
               </div>
