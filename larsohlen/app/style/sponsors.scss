@@ -49,6 +49,35 @@ a{
     margin: 0 auto;
 }
 
+.cards {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card__div {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    gap: 1rem;
+}
+
+.side-img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 5rem;
+    margin: 0 1rem;
+}
+.sideimg-right{
+    align-self: flex-end;
+}
+
+.placeholder {
+    max-width: 250px;
+    border-radius: 5rem;
+    margin: 2rem 0;
+    min-height: 200px;
+}
 
 @media (max-width: 768px) {
     .card {

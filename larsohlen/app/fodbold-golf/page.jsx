@@ -25,8 +25,8 @@ export default function Fodboldgolf() {
           <p>kildedalfg@gmail.com</p>
           <p>frederikssund.fodboldgolf.klub@gmail.com</p>
         </div>
-
-        <p>
+<h2 className='placeringer-heading'>MINE BEDSTE PLACERINGER</h2>
+        <p className='placeringer'>
           • Verdensmester i 55+<br />
           • 40 podier🏆<br />
           • 🥇19 stk. 🥈8 stk. 🥉13 stk.<br />
