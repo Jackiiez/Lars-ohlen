@@ -102,6 +102,15 @@ export default function Home() {
               <p>Valg af lån i ejerbolig</p>
               <p>Godkendelse af økonomi og meget mere</p>
             </div>
+             <div className="image-container">
+              <div className="main-image-container">
+                <img className="main-image" src="vinderet.jpg" alt="Main Image" onClick={() => openLightbox(['vinderet.jpg'], 0)} />
+              </div>
+              <div className="grid-images">
+                <img className="champagne" src="vinderto.jpg" alt="Champagne" onClick={() => openLightbox(['vinderto.jpg'], 0)} />
+                <img className="kærlighed" src="vinder3.jpg" alt="Kærlighed" onClick={() => openLightbox(['vinder3.jpg'], 0)} />
+              </div>
+            </div>
             <div className="image-container">
               <div className="main-image-container">
                 <img className="main-image" src="vinder.jpg" alt="Main Image" onClick={() => openLightbox(['vinder.jpg'], 0)} />
@@ -111,6 +120,7 @@ export default function Home() {
                 <img className="kærlighed" src="kærlighed.jpg" alt="Kærlighed" onClick={() => openLightbox(['kærlighed.jpg'], 0)} />
               </div>
             </div>
+            
           </div>
           <div className="comming-soon-container">
             <h2>Coming Soon</h2>

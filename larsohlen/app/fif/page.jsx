@@ -1,6 +1,7 @@
 "use client"
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import Video from '../components/jackie';
 export default function Fif() {
     const [cards, setCards] = useState([]);
 
@@ -57,6 +58,18 @@ export default function Fif() {
                     <Link href={"https://www.facebook.com/lars.ohlen.9/posts/pfbid036JFx7vySFU2jXfMM6sXqyEg6XqJpL6iFYVXdt1jFJ2X1qvMBnjBEVCReEvHECB72l?rdid=hDsn2dZYwEwkOG8s#"}>
                         <img className='posts-img' src="jackie-mål.jpg" alt="" />
                     </Link><p className='posts-text'>Jeg ved godt, at Jackie er god til at score damer eller VAR, der er vist en meget sød kæreste nu 💃🫶
+                        Jeg ved godt, at Jackie er god til at lave insta .....
+                        MEN al den snak om ALLE de mål Jackie scorer for FIF ⚽⚽⚽⚽⚽ var jeg træt at høre om hele tiden.
+                        "Lars, Lars du kom for sent, jeg har scoret 2 mål og lavet 1 assist i første halvleg ..... men se første video SÅDAN JACKS 💪⚽✌️
+                        og Faiz du er en unik fighter, video 2, stormer frem, ruller rundt, tilbageløb og piver aldrig 🙏</p>
+
+                </div>
+                   <div className='fif-content-div'>
+                    <hr />
+                    <h2 className='posts-heading'>Gutterne i FIF fejre første sæson sejr ⚽️🏆🥇</h2>
+                    <Video src="fodbold.mp4" 
+       />
+                   <p className='posts-text'>Jeg ved godt, at Jackie er god til at score damer eller VAR, der er vist en meget sød kæreste nu 💃🫶
                         Jeg ved godt, at Jackie er god til at lave insta .....
                         MEN al den snak om ALLE de mål Jackie scorer for FIF ⚽⚽⚽⚽⚽ var jeg træt at høre om hele tiden.
                         "Lars, Lars du kom for sent, jeg har scoret 2 mål og lavet 1 assist i første halvleg ..... men se første video SÅDAN JACKS 💪⚽✌️

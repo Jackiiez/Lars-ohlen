@@ -13,6 +13,7 @@ Jeg er meget taknemmelig for denne mulighed og glæder mig til at køre rundt i 
         <div className='side-img-div'>
             <img className='side-img' src='bilfem.jpg' alt='Left Side Image' />
              <img className='side-img' src='bilseks.jpg' alt='Right Side Image' /> <img className='side-img' src='bilsyv.jpg' alt='Right Side Image' />
+              <img className='side-img' src='bilotte.jpg' alt='Right Side Image' />
         </div>
 </section>
   );
