@@ -8,6 +8,8 @@ import "./style/gallery.scss";
 import "./style/bog.scss";
 import "./style/baner.scss";
 import "./style/fodboldgolf.scss";
+import "./style/fif.scss";
+import "./style/bil.scss";
 import NavBar from "./components/NavBar";
 import Footer from "./components/footer";
 

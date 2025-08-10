@@ -3,7 +3,7 @@
 import React from 'react';
 import '../style/footer.scss';
 
-const Footer = () => {
+export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-content">     <hr className="divider-one" />
@@ -11,7 +11,7 @@ const Footer = () => {
            
           <p>60 68 66 60</p>
           <p>Facebook.com</p>
-          <p>mail.com</p>
+          <p>Larsohlen67@gmail.com</p>
         </div>
         <hr className="divider" />
         <div className="footer-details">
@@ -24,4 +24,3 @@ const Footer = () => {
   );
 };
 
-export default Footer;

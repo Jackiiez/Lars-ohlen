@@ -1,14 +1,36 @@
 "use client";
 import { useState, useEffect, useRef } from 'react';
 import Lightbox from './components/lightbox';
+import Link from 'next/link';
 
 
 export default function Home() {
+
   const [visibleCards, setVisibleCards] = useState([]);
   const [isLightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxImages, setLightboxImages] = useState([]);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const cardRefs = useRef([]);
+
+
+
+  const [cards, setCards] = useState([]);
+
+  useEffect(() => {
+    fetch('/videoer.json')
+      .then(response => response.json())
+      .then(data => {
+        console.log('Fetched data:', data);
+
+        if (Array.isArray(data.sponsors)) {
+          setCards(data.sponsors);
+        } else {
+          console.error('Sponsors is not a valid array:', data.sponsors);
+          setCards([]);
+        }
+      })
+      .catch(error => console.error('Error fetching cards:', error));
+  }, []);
 
   //animation on load
   useEffect(() => {
@@ -39,28 +61,28 @@ export default function Home() {
 
   //lightbox
   // Reference to store DOM elements for each card
-const setCardRef = (index) => (el) => {
-  // Assign the current element (el) to the cardRefs array at the specified index
-  cardRefs.current[index] = el;
-};
+  const setCardRef = (index) => (el) => {
+    // Assign the current element (el) to the cardRefs array at the specified index
+    cardRefs.current[index] = el;
+  };
 
-// Function to open the lightbox with specified images and the index of the current image
-const openLightbox = (images, index) => {
-  // Set the images to be displayed in the lightbox
-  setLightboxImages(images);
-  // Set the index of the currently displayed image
-  setCurrentImageIndex(index);
-  // Open the lightbox
-  setLightboxOpen(true);
-};
+  // Function to open the lightbox with specified images and the index of the current image
+  const openLightbox = (images, index) => {
+    // Set the images to be displayed in the lightbox
+    setLightboxImages(images);
+    // Set the index of the currently displayed image
+    setCurrentImageIndex(index);
+    // Open the lightbox
+    setLightboxOpen(true);
+  };
 
-// Function to close the lightbox
-const closeLightbox = () => {
-  // Set the state to close the lightbox
-  setLightboxOpen(false);
-};
+  // Function to close the lightbox
+  const closeLightbox = () => {
+    // Set the state to close the lightbox
+    setLightboxOpen(false);
+  };
 
-  
+
 
   return (
     <>
@@ -90,6 +112,25 @@ const closeLightbox = () => {
               </div>
             </div>
           </div>
+          <div className="comming-soon-container">
+            <h2>Coming Soon</h2>
+            <div className="movies-grid">
+              {cards.map(card => (
+                <div key={card.id} className="movie-card">
+
+                  <img src={card.img} alt={card.name} />
+
+                  <div className="movie-info">
+                    <h3>{card.name}</h3>
+                    <p>{card.text}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+          </div>
+
+
         </section>
       </div>
 

@@ -27,8 +27,7 @@ return (
         <div className='cards'>
             <h2 className='sponsore-heading'>Mine stolte sponsorer!</h2>
 
-         
-            <img className='side-img' src='/path/to/your/left-image.jpg' alt='Left Side Image' />
+   
 
             {cards.map((card, index) => (
                 <div key={index} className="card__div">
@@ -43,9 +42,12 @@ return (
                     </div>
                 </div>
             ))}
-
+<div className='side-img-div'>
+            <img className='side-img' src='bilet.jpg' alt='Left Side Image' />
+             <img className='side-img' src='biltre.jpg' alt='Right Side Image' /> <img className='side-img' src='bilto.jpg' alt='Right Side Image' />
+        </div>
           
-            <img className='side-img-right' src='/path/to/your/right-image.jpg' alt='Right Side Image' />
+           
         </div>
     </>
 );

@@ -19,7 +19,7 @@ export default function Fodboldgolf() {
       };
   return (
     <div className="fodboldgolf-container">
-      <h2>Fodboldgolferen LAS ⚽️⛳️🕳</h2>
+      <h2 className='sponsore-heading'>Fodboldgolferen LAS ⚽️⛳️🕳</h2>
       <article>
         <div className='mails'>
           <p>kildedalfg@gmail.com</p>

@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import '../style/lightbox.scss';
 
+
+
 const Lightbox = ({ images, isOpen, onClose }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 

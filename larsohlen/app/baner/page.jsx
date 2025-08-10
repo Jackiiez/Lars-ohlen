@@ -6,7 +6,7 @@ export default function Baner() {
     
     return (
         <div className="baner-container">
-            <h1>baner jeg elsker</h1>
+            <h1 className="sponsore-heading">baner jeg elsker</h1>
             <p>Et anlæg vi skal have link og artiklen:</p>
             <p>* Niels Vendelboe har altid bakket vores sport op</p>
             <p>* Afholdt massevis af Nordjyske Opens</p>

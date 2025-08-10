@@ -13,9 +13,9 @@ export default function NavBar() {
 
     const handleItemClick = (index) => {
         if (activeItem === index) {
-            setActiveItem(null); 
+            setActiveItem(null);
         } else {
-            setActiveItem(index); 
+            setActiveItem(index);
         }
     };
 
@@ -31,25 +31,29 @@ export default function NavBar() {
                         <Link href="/" className="navbar-link" onClick={() => setIsOpen(false)}>
                             <p>Home</p>
                         </Link>
-                       
+
                     </li>
                     <li className="navbar-item" onClick={() => handleItemClick(1)}>
                         <Link href="/fodbold-golf" className="navbar-link" onClick={() => setIsOpen(false)}>
                             <p>Fodboldgolf</p>
                         </Link>
                         <ul className={`navbar-dropdown ${activeItem === 1 ? 'active' : ''}`}>
-                              <li><Link href="/bog" onClick={() => setIsOpen(false)}>Jeg er med i en bog!</Link></li>
+                            <li><Link href="/bog" onClick={() => setIsOpen(false)}>Jeg er med i en bog!</Link></li>
                             <li><Link href="/titler" onClick={() => setIsOpen(false)}>Titler</Link></li>
                             <li><Link href="/baner" onClick={() => setIsOpen(false)}>Baner</Link></li>
-                          
-                    
+
+
                         </ul>
                     </li>
-                    <li className="navbar-item"onClick={() => handleItemClick(2)} >
+                    <li className="navbar-item" onClick={() => handleItemClick(2)} >
                         <Link href="/sponsors" className="navbar-link" onClick={() => setIsOpen(false)} >
                             <p>Mine sponsore</p>
                         </Link>
-                       
+                        <ul className={`navbar-dropdown ${activeItem === 1 ? 'active' : ''}`}>
+                            <li><Link href="/bil" onClick={() => setIsOpen(false)}>Min Bil</Link></li>
+
+
+                        </ul>
                     </li>
                     <li className="navbar-item" onClick={() => handleItemClick(3)}>
                         <Link href="/galleri" className="navbar-link" onClick={() => setIsOpen(false)}>
@@ -61,21 +65,21 @@ export default function NavBar() {
                         </ul>
                     </li>
                     <li className="navbar-item" onClick={() => handleItemClick(4)}>
-                        <Link href="/fodbold" className="navbar-link"  onClick={() => setIsOpen(false)} >
+                        <Link href="/fodbold" className="navbar-link" onClick={() => setIsOpen(false)} >
                             <p>Fodbold</p>
                         </Link>
                         <ul className={`navbar-dropdown ${activeItem === 4 ? 'active' : ''}`}>
                             <li><Link href="/broenby" onClick={() => setIsOpen(false)}>Brøndby</Link></li>
-                            <li><Link href="/barcelona" onClick={() => setIsOpen(false)}>Barcalona</Link></li>
+                            <li><Link href="/barcalona" onClick={() => setIsOpen(false)}>Barcalona</Link></li>
                             <li><Link href="/liverpool" onClick={() => setIsOpen(false)}>Liverpool</Link></li>
                             <li><Link href="/fif" onClick={() => setIsOpen(false)}>FIF</Link></li>
                         </ul>
                     </li>
-                    <li className="navbar-item"onClick={() => handleItemClick(5)} >
+                    <li className="navbar-item" onClick={() => handleItemClick(5)} >
                         <Link href="/salg" className="navbar-link" onClick={() => setIsOpen(false)}>
                             <p>Salg</p>
                         </Link>
-                       
+
                     </li>
                     <li className="navbar-item">
                         <Link href="/" className="navbar-link" onClick={() => setIsOpen(false)}>
