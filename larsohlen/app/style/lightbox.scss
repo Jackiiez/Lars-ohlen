@@ -33,7 +33,12 @@
   border: none;
   font-size: 24px;
   cursor: pointer;
-  color: #333;
+
+   
+    color: white;
+   
+    
+    z-index: 100;
 }
 @media (max-width: 480px){
   .image{

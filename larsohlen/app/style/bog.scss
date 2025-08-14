@@ -1,3 +1,6 @@
+.white{
+    color: white;
+}
 .section {
     display: grid;
     grid-template-columns: 1fr;
@@ -14,7 +17,9 @@
             @media (max-width: 480px) {
                 font-size: 3rem;
             }
+
         }
+     
         .image-grid{
                 justify-content: center;
         }
@@ -25,6 +30,7 @@
 
         .subtitle {
             font-size: calc(5rem * 0.3); // 30% of h1's desktop size
+            color: white;
 
             @media (max-width: 480px) {
                 font-size: calc(3rem * 0.3); // 30% of h1's mobile size
@@ -39,7 +45,7 @@
 
     .image-grid {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         justify-content: space-between;
         width: 100%;
         max-width: 40vw; // Ensures the overall div is responsive
@@ -48,7 +54,7 @@ justify-content: center;
     gap: 2rem;
         img {
            min-width: 240px;
-            height: auto; // Maintains aspect ratio
+            height: 75%; // Maintains aspect ratio
         }
     }
 }
@@ -56,6 +62,9 @@ justify-content: center;
          .section .image-grid img {
    
     min-width: 150px;
+}
+.section .image-grid {
+        grid-template-columns: repeat(1, 1fr); 
 }
      }
 

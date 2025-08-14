@@ -1,7 +1,7 @@
 {
   "sections": [
     {
-      "heading": "Blandet fodboldgolf",
+      "heading": "Fodboldgolf",
       "galleryItems": [
         {
           "id": 1,
@@ -117,31 +117,13 @@
           "heading": "Fodbold"
         }
       ]
-    },
-
-
-
-
-
-    {
-      "heading": "Blandet fodbold",
-      "galleryItems": [
-        {
-          "id": 9,
-          "title": "Beautiful Beaches",
-          "image": "beach.jpg",
-          "description": "Explore the stunning beaches around the world.",
-          "link": "https://example.com/beaches"
-        },
-        {
-          "id": 10,
-          "title": "Mountain Adventures",
-          "image": "mountain.jpg",
-          "description": "Experience breathtaking mountain views.",
-          "link": "https://example.com/mountains"
-        }
-      ]
     }
+
+
+
+
+
+    
   ]
 }
 

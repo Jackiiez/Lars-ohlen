@@ -22,7 +22,7 @@ export default function Liverpool() {
   return (
     <>
       <section className='fif-section'>
-        <div className='fif-info-div'> <Link className='intro-text' href={""}><h1 className='sponsore-heading'>F.C Barcalona </h1></Link>
+        <div className='fif-info-div'> <Link className='intro-text' href={""}><h1 className='sponsore-heading'>FC Barcelona </h1></Link>
           <Link className='intro-text' href={""}>
 
 

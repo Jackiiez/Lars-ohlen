@@ -50,6 +50,18 @@ export default function Fif() {
                     ))}
                     
                 </div></div>
+                 <div className='fif-content-div'>
+                    <hr />
+                    <h2 className='posts-heading'>Gutterne i FIF fejre første sæson sejr ⚽️🏆🥇</h2>
+                    <Video src="fodbold.mp4" 
+       />
+                   <p className='posts-text'>Jeg ved godt, at Jackie er god til at score damer eller VAR, der er vist en meget sød kæreste nu 💃🫶
+                        Jeg ved godt, at Jackie er god til at lave insta .....
+                        MEN al den snak om ALLE de mål Jackie scorer for FIF ⚽⚽⚽⚽⚽ var jeg træt at høre om hele tiden.
+                        "Lars, Lars du kom for sent, jeg har scoret 2 mål og lavet 1 assist i første halvleg ..... men se første video SÅDAN JACKS 💪⚽✌️
+                        og Faiz du er en unik fighter, video 2, stormer frem, ruller rundt, tilbageløb og piver aldrig 🙏</p>
+
+                </div>
                 <div className='fif-content-div'>
                     <hr />
                     <h2 className='posts-heading'>Jackie scorer mål for FIF ⚽️🏆🥇</h2>
@@ -64,18 +76,7 @@ export default function Fif() {
                         og Faiz du er en unik fighter, video 2, stormer frem, ruller rundt, tilbageløb og piver aldrig 🙏</p>
 
                 </div>
-                   <div className='fif-content-div'>
-                    <hr />
-                    <h2 className='posts-heading'>Gutterne i FIF fejre første sæson sejr ⚽️🏆🥇</h2>
-                    <Video src="fodbold.mp4" 
-       />
-                   <p className='posts-text'>Jeg ved godt, at Jackie er god til at score damer eller VAR, der er vist en meget sød kæreste nu 💃🫶
-                        Jeg ved godt, at Jackie er god til at lave insta .....
-                        MEN al den snak om ALLE de mål Jackie scorer for FIF ⚽⚽⚽⚽⚽ var jeg træt at høre om hele tiden.
-                        "Lars, Lars du kom for sent, jeg har scoret 2 mål og lavet 1 assist i første halvleg ..... men se første video SÅDAN JACKS 💪⚽✌️
-                        og Faiz du er en unik fighter, video 2, stormer frem, ruller rundt, tilbageløb og piver aldrig 🙏</p>
-
-                </div>
+                  
             </section>
         </>
 

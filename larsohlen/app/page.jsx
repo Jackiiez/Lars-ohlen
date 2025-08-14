@@ -87,7 +87,8 @@ export default function Home() {
   return (
     <>
       <div className="hero">
-        <h1>Lars Ohlen</h1>
+        <h1>Lars Ohlen {"(LAS"}</h1>
+        <h1>the double trouble{")"}</h1>
       </div>
 
       <div className="hero-content">
@@ -102,7 +103,7 @@ export default function Home() {
               <p>Valg af lån i ejerbolig</p>
               <p>Godkendelse af økonomi og meget mere</p>
             </div>
-             <div className="image-container">
+            <div className="image-container">
               <div className="main-image-container">
                 <img className="main-image" src="vinderet.jpg" alt="Main Image" onClick={() => openLightbox(['vinderet.jpg'], 0)} />
               </div>
@@ -113,32 +114,129 @@ export default function Home() {
             </div>
             <div className="image-container">
               <div className="main-image-container">
-                <img className="main-image" src="vinder.jpg" alt="Main Image" onClick={() => openLightbox(['vinder.jpg'], 0)} />
+                <img className="main-image" src="DMvinder.jpg" alt="Main Image" onClick={() => openLightbox(['DMvinder.jpg'], 0)} />
               </div>
               <div className="grid-images">
                 <img className="champagne" src="champange.jpg" alt="Champagne" onClick={() => openLightbox(['champange.jpg'], 0)} />
                 <img className="kærlighed" src="kærlighed.jpg" alt="Kærlighed" onClick={() => openLightbox(['kærlighed.jpg'], 0)} />
               </div>
             </div>
-            
+
           </div>
-          <div className="comming-soon-container">
-            <h2>Coming Soon</h2>
+
+
+
+
+
+
+   <div className="coming-soon-container">
+    <div className="movies-grid slider">
+        <div className="movie-card">
+            <video controls width="500">
+                <source src="fodbold.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+            <div className="movie-info">
+                <h3>Football Video 1</h3>
+                <p>Watch this amazing football video!</p>
+            </div>
+        </div>
+        <div className="movie-card">
+            <video controls width="500">
+                <source src="fodbold2.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+            <div className="movie-info">
+                <h3>Football Video 2</h3>
+                <p>Enjoy the highlights of the match!</p>
+            </div>
+        </div>
+        <div className="movie-card">
+            <video controls width="500">
+                <source src="fodbold3.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+            <div className="movie-info">
+                <h3>Football Video 3</h3>
+                <p>Check out this fantastic goal!</p>
+            </div>
+        </div>
+        <div className="movie-card">
+            <video controls width="500">
+                <source src="fodbold4.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+            <div className="movie-info">
+                <h3>Football Video 4</h3>
+                <p>Relive the best moments of the game!</p>
+            </div>
+        </div>
+        <div className="movie-card">
+            <video controls width="500">
+                <source src="fodbold5.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+            <div className="movie-info">
+                <h3>Football Video 5</h3>
+                <p>Witness the thrilling finale!</p>
+            </div>
+        </div>
+        <div className="movie-card">
+            <video controls width="500">
+                <source src="fodbold6.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+            <div className="movie-info">
+                <h3>Football Video 6</h3>
+                <p>Catch the excitement of the tournament!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+          {/* <div className="comming-soon-container">
+            
+            <h2>Lars video-highlights</h2>
             <div className="movies-grid">
-              {cards.map(card => (
-                <div key={card.id} className="movie-card">
 
-                  <img src={card.img} alt={card.name} />
+              <div className="movie-card">
 
-                  <div className="movie-info">
-                    <h3>{card.name}</h3>
-                    <p>{card.text}</p>
-                  </div>
+                <video controls width="500">
+                  <source src="fodbold.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+
+                <div className="movie-info">
+                  <h3>hej</h3>
+                  <p>hej</p>
                 </div>
-              ))}
+              </div>
+
             </div>
 
+
           </div>
+          <div className="movie-card">
+
+            <video controls width="500">
+              <source src="fodbold.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+
+            <div className="movie-info">
+              <h3>hej</h3>
+              <p>hej</p>
+            </div>
+          </div> */}
 
 
         </section>

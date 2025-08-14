@@ -14,9 +14,8 @@
 
 
 }
-.side-img-right{
 
-}
+
 .side-img-div{
     display: grid
 ;
@@ -59,7 +58,7 @@
     text-align: center;
     color: white;
     font-size: 4rem;
- 
+     padding-top: 25px;
 
 }
 
@@ -107,4 +106,9 @@ a{
         max-height: 90%;
         object-fit: cover;
     }
+    .side-img-div {
+     grid-auto-flow: row; 
+  gap: 1rem
+;
+}
 }

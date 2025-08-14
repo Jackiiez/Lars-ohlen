@@ -39,6 +39,7 @@
     p {
       margin: 0; // Remove default margin
       line-height: 1.6; // Improve readability
+      color: white;
     }
 
     img {
@@ -48,6 +49,9 @@
           margin: 0 auto;
     }
   }
+}
+.mails p, .placeringer{
+  color: white;
 }
 
 // Responsive Styles

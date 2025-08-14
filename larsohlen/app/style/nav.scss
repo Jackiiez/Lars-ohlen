@@ -18,7 +18,6 @@
     }
 }
 
-
 .navbar-title {
     width: 100%;
     display: flex;
@@ -40,7 +39,7 @@
 .navbar-item {
     text-align: center;
     flex-grow: 1;
-    position: relative; // Keep relative for dropdown positioning
+    position: relative; /* Keep relative for dropdown positioning */
 }
 
 .navbar-item:nth-child(1) { animation-delay: 0.1s; }
@@ -59,6 +58,7 @@
 
 .navbar-link:hover {
     transform: translateY(-4px);
+    color: white;
 }
 
 .burger-menu {
@@ -79,24 +79,25 @@
 .navbar-dropdown {
     display: none; 
     position: absolute;
-    left: 50%; // Center horizontally
-    transform: translateX(-50%); // Center adjustment
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center adjustment */
     top: 100%;
     z-index: 100; 
-    background: white; // Add a background for visibility
-    border: 1px solid #ccc; // Optional: Add a border for better visibility
-    border-radius: 4px; // Optional: Round the corners
-
+    background: white; /* Add a background for visibility */
+    border: 1px solid #ccc; /* Optional: Add a border for better visibility */
+    border-radius: 4px; /* Optional: Round the corners */
 }
 
-
-.navbar-item:hover .navbar-dropdown {
-    display: block; // Show the dropdown on hover
+/* Show dropdown when hovering over the navbar item or the dropdown itself */
+.navbar-item:hover .navbar-dropdown,
+.navbar-dropdown:hover {
+    display: block; /* Keep the dropdown visible */
 }
 
 .navbar-dropdown li {
     padding: 8px;
-    text-align: center; // Center text in dropdown items
+    text-align: center; /* Center text in dropdown items */
+    z-index: 100;
 }
 
 @media (max-width: 500px) {
@@ -106,29 +107,35 @@
     }
 
     .navbar-dropdown {
-        position: static; // Keep it static for mobile
-        max-height: 100px; // Limit height
-        overflow: hidden; // Prevent overflow if items exceed max height
+        position: static; /* Keep it static for mobile */
+        max-height: 100px; /* Limit height */
+        overflow: hidden; /* Prevent overflow if items exceed max height */
         margin-left: 50%;
-    min-width: 100px;
-background: none;
-border: none;
+        min-width: 100px;
+        background: none;
+        border: none;
     }
-.navbar-item a{
-    color: white;
-}
-.navbar-link{
+
+    .navbar-item a {
+        color: white;
+    }
+
+    .navbar-link {
         align-self: center;
-}
-.navbar-dropdown li {
-    padding: 0px;
-}
+    }
+
+    .navbar-dropdown li {
+        padding: 0px;
+    }
+
     .navbar-item.active .navbar-dropdown {
         display: block; /* Show dropdown when active */
     }
-.navbar-item p{
-    font-size: 2rem;
-}
+
+    .navbar-item p {
+        font-size: 2rem;
+    }
+
     .burger-menu {
         display: flex;
         flex-direction: column;
@@ -149,10 +156,11 @@ border: none;
         opacity: 1;
         display: grid;
     }
+
     .contact-info {
-    text-align: center;
-  display: block !important;
-}
+        text-align: center;
+        display: block !important;
+    }
 
     .navbar.open {
         display: flex;
@@ -175,7 +183,7 @@ border: none;
     }
 
     .navbar-dropdown {
-        display: grid; // Use grid layout for dropdown items
-        justify-items: center; // Center items in the dropdown
+        display: grid; /* Use grid layout for dropdown items */
+        justify-items: center; /* Center items in the dropdown */
     }
 }

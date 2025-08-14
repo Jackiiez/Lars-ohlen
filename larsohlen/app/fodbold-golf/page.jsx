@@ -25,20 +25,20 @@ export default function Fodboldgolf() {
           <p>kildedalfg@gmail.com</p>
           <p>frederikssund.fodboldgolf.klub@gmail.com</p>
         </div>
-<h2 className='placeringer-heading'>MINE BEDSTE PLACERINGER</h2>
+<h2 className='sponsore-heading'>Mine podier🏆</h2>
         <p className='placeringer'>
           • Verdensmester i 55+<br />
-          • 40 podier🏆<br />
-          • 🥇19 stk. 🥈8 stk. 🥉13 stk.<br />
+          • 41 podier🏆<br />
+          • 🥇19 stk. 🥈8 stk. 🥉14 stk.<br />
           • Vigtigste titler:<br />
           • 🏆Verdensmester i single i 55 + i 2023<br />
           • 🇫🇷 Frankrig Open i single overall i 2024<br />
-          • Vandt med 12 skud – største internationale sejr i 6 år!<br />
+          • Vandt med 12 skud - største internationale sejr i 6 år!<br />
           • 🇪🇸 Spanien Open i herredouble i 2018 og 2021<br />
           • 🇫🇮 Finland Open i herredouble i 2019<br />
           • 🇩🇰 Danish Open i herredouble 2024<br />
-          • Spillet i alt 74 anlæg med mindst 18 huller<br />
-          • Nærmer mig at have spillet i alt 100 baner med 18 huller<br />
+          • Spillet i alt 81 anlæg med mindst 18 huller<br />
+          • Jeg har spillet præcis 100 baner med 18 huller, som vil frigiver dene hjememside ligenu<br />
           • Jeg har måske spillet aller flest baner af alle i hele verden ifølge de ”erfarne”<br />
           • Verdensrangliste højdepunkter:<br />
           • 55+ nummer 1 i verden<br />
@@ -52,8 +52,8 @@ export default function Fodboldgolf() {
         </p>
 
         <p>
-          * Jeg har spillet 74 anlæg med mindst 18 huller ⚽️⛳️🕳<br />
-          * og snart 100 baner i alt med 18 huller ⚽️⛳️🕳<br />
+          * Jeg har spillet 81 anlæg med mindst 18 huller ⚽️⛳️🕳<br />
+          * Jeg har spillet 100 baner i alt med 18 huller ⚽️⛳️🕳<br />
           * sandsynligvis den i verden, der har spillet allerflest ⚽️⛳️🕳
         </p>
 

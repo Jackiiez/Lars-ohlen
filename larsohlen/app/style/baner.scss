@@ -29,11 +29,13 @@
     display: grid; // Use grid layout for links
   }
 }
-
+.baner-container p{
+  color: white;
+}
 // Responsive Styles
 @media (max-width: 480px) {
   h1 {
-    font-size: 1.5em; // Adjust heading size for mobile
+    // font-size: 1.5em; // Adjust heading size for mobile
   }
 
   p {

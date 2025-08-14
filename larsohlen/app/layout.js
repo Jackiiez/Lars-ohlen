@@ -10,6 +10,8 @@ import "./style/baner.scss";
 import "./style/fodboldgolf.scss";
 import "./style/fif.scss";
 import "./style/bil.scss";
+import "./style/fodbold.scss";
+import "./style/salg.scss";
 import NavBar from "./components/NavBar";
 import Footer from "./components/footer";
 
