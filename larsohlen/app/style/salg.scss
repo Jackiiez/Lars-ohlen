@@ -37,6 +37,9 @@
     font-size: 2rem;
 
 }
+.cards{
+        padding: 2rem;
+}
 @media (max-width: 840px) {
     .outter-card-div{
             grid-template-columns: repeat(1, 1fr);

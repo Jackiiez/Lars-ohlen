@@ -127,7 +127,7 @@ export default function Home() {
 
 
 
-
+  <hr className="divider" />
 
    <div className="coming-soon-container">
     <div className="movies-grid slider">
@@ -143,7 +143,7 @@ export default function Home() {
         </div>
         <div className="movie-card">
             <video controls width="500">
-                <source src="fodbold2.mp4" type="video/mp4" />
+                <source src="vip.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
             <div className="movie-info">
@@ -151,9 +151,10 @@ export default function Home() {
                 <p>Enjoy the highlights of the match!</p>
             </div>
         </div>
+        
         <div className="movie-card">
             <video controls width="500">
-                <source src="fodbold3.mp4" type="video/mp4" />
+                <source src="video3.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
             <div className="movie-info">
@@ -163,7 +164,7 @@ export default function Home() {
         </div>
         <div className="movie-card">
             <video controls width="500">
-                <source src="fodbold4.mp4" type="video/mp4" />
+                <source src="fodbold.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
             <div className="movie-info">
@@ -173,7 +174,7 @@ export default function Home() {
         </div>
         <div className="movie-card">
             <video controls width="500">
-                <source src="fodbold5.mp4" type="video/mp4" />
+                <source src="fodbold.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
             <div className="movie-info">
@@ -183,7 +184,17 @@ export default function Home() {
         </div>
         <div className="movie-card">
             <video controls width="500">
-                <source src="fodbold6.mp4" type="video/mp4" />
+                <source src="fodbold.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+            <div className="movie-info">
+                <h3>Football Video 6</h3>
+                <p>Catch the excitement of the tournament!</p>
+            </div>
+        </div>
+           <div className="movie-card">
+            <video controls width="500">
+                <source src="clean.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
             <div className="movie-info">

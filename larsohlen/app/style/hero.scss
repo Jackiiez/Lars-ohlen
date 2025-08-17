@@ -8,6 +8,76 @@
     opacity: 1;
     transform: translateY(0);
   }
+  
+}
+
+/* Add this to your CSS file */
+
+
+
+
+.coming-soon-container {
+    // Styles for the container
+    color: #fff; // Example style
+    padding: 20px; // Example style
+    display: grid
+;
+ margin-top: 3rem;
+
+    justify-content: start;
+    .movies-grid {
+      flex-direction: row;
+    gap: 20px;
+    display: flex
+;
+    overflow-x: auto;
+    max-width: 100%;
+
+        .movie-card {
+            width: 250px; // Set a fixed width for the card
+            flex-shrink: 0; // Prevent shrinking
+
+            video {
+                width: 100%; // Make video responsive to card width
+                height: auto; // Maintain aspect ratio
+                object-fit: cover; // Cover the area without distortion
+                border-radius: 1rem; // Optional styling
+                transition: transform 0.2s; // Optional hover effect
+                    height: 99%;
+
+            }
+            video:fullscreen{
+              object-fit: none;
+            }
+
+            .movie-info {
+                padding: 10px; // Padding around text
+
+                h3 {
+                    font-size: 16px; // Heading size
+                    margin: 0; // Remove default margin
+                    font-weight: 600; // Bold text
+                }
+
+                p {
+                    color: #bbb; // Text color
+                    font-size: 14px; // Text size
+                    margin-top: 5px; // Spacing above paragraph
+                }
+            }
+
+       
+          
+        }
+    }
+}
+.content-container{
+      margin-bottom: 5rem;
+
+}
+.movies-grid{
+  overflow-y: hidden;
+ 
 }
 
 h1 {

@@ -33,9 +33,14 @@ $font-family: 'Arial', sans-serif;
         }
 
         .gallery-image {
-            width: 100%;
-            height: auto;
+            
             display: block;
+                height: 200px;
+    display: block;
+    object-fit: cover;
+    border-radius: 1rem;
+    place-self: center;
+    width: 25vh;
         }
 
         .gallery-info {

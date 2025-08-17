@@ -23,9 +23,9 @@ export default function Featured() {
     }, []);
 
 return (
-    <>
+    <> 
         <div className='cards'>
-            <h2 className='sponsore-heading'>Mine stolte sponsorer!</h2>
+            
 
    
 

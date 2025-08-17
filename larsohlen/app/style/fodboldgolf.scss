@@ -1,5 +1,13 @@
 
-// styles.scss
+.fodboldgolf-grid{
+      display: grid
+;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: end;
+}
+.fg-img{
+      max-width: 500px;
+}
 .mails{
     display: grid
 ;
@@ -34,19 +42,24 @@
     div {
       display: grid; // Use grid for inner divs
       gap: 10px; // Space between inner div items
+          align-self: end;
+          margin-bottom: 2rem;
+            margin-top: 2rem;
     }
 
     p {
       margin: 0; // Remove default margin
       line-height: 1.6; // Improve readability
       color: white;
+          text-align: center;
     }
 
     img {
-      max-width: 50vw; // Set max width of images to 50vw
-      height: auto; // Maintain aspect ratio
-      border-radius: 8px; // Add border radius for images
-          margin: 0 auto;
+    border-radius: 8px;
+    max-width: 450px;
+    height: 750px;
+    margin: 0 auto;
+    object-fit: cover;
     }
   }
 }
@@ -55,6 +68,13 @@
 }
 
 // Responsive Styles
+@media (max-width: 949px){
+  .fodboldgolf-grid{
+
+    grid-template-columns: repeat(1, 1fr);
+
+}
+}
 @media (max-width: 480px) {
   .fodboldgolf-container {
     padding: 2rem; // Adjust padding for mobile

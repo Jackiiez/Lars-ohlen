@@ -4,19 +4,19 @@ import Lightbox from '../components/lightbox';
 import { useRef, useState } from 'react';
 
 export default function Fodboldgolf() {
-       const cardRefs = useRef([]);
-        const [lightboxImages, setLightboxImages] = useState([]);
-        const [isLightboxOpen, setLightboxOpen] = useState(false);
-      const [currentImageIndex, setCurrentImageIndex] = useState(0);
-          const openLightbox = (images, index) => {
-        setLightboxImages(images);
-        setCurrentImageIndex(index);
-        setLightboxOpen(true);
-      };
-    
-      const closeLightbox = () => {
-        setLightboxOpen(false);
-      };
+  const cardRefs = useRef([]);
+  const [lightboxImages, setLightboxImages] = useState([]);
+  const [isLightboxOpen, setLightboxOpen] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const openLightbox = (images, index) => {
+    setLightboxImages(images);
+    setCurrentImageIndex(index);
+    setLightboxOpen(true);
+  };
+
+  const closeLightbox = () => {
+    setLightboxOpen(false);
+  };
   return (
     <div className="fodboldgolf-container">
       <h2 className='sponsore-heading'>Fodboldgolferen LAS ⚽️⛳️🕳</h2>
@@ -25,7 +25,7 @@ export default function Fodboldgolf() {
           <p>kildedalfg@gmail.com</p>
           <p>frederikssund.fodboldgolf.klub@gmail.com</p>
         </div>
-<h2 className='sponsore-heading'>Mine podier🏆</h2>
+        <h2 className='sponsore-heading'>Mine podier🏆</h2>
         <p className='placeringer'>
           • Verdensmester i 55+<br />
           • 41 podier🏆<br />
@@ -56,44 +56,61 @@ export default function Fodboldgolf() {
           * Jeg har spillet 100 baner i alt med 18 huller ⚽️⛳️🕳<br />
           * sandsynligvis den i verden, der har spillet allerflest ⚽️⛳️🕳
         </p>
+  <hr className="divider" />
 
-        <img src="filler.jpg" alt="" onClick={() => openLightbox(['bog3.jpg'], 0)} />
 
-        <p>
-          * En af nye bedste vennerne Thomas Skov Rasmussen:<br />
-          * hjælper mig med at arrangere EM i Fodboldgolf<br />
-          * laver den vildeste "artikel" om international Fodboldgolf
-        </p>
 
-        <img src="ven.jpg" alt="" onClick={() => openLightbox(['bog3.jpg'], 0)} />
+  
+        <div className='fodboldgolf-grid'>
+          <div>
+            <p>
+              * En af nye bedste vennerne Thomas Skov Rasmussen:<br />
+              * hjælper mig med at arrangere EM i Fodboldgolf<br />
+              * laver den vildeste "artikel" om international Fodboldgolf
+            </p>
 
-        <div>
-          <p>Med indunder Ørsted Outdoor - måske du har lagt dem over på Sponsorsiden nu, værs'go:</p>
-          <Link href={"https://www.facebook.com/lars.ohlen.9/posts/pfbid02zjsTWtdqYKhSew6ryrUjwyVvAc5GND3ho3XYUEKULaEgFGYypU9irEWNg1aEtRJ4l?rdid=qfmmx32NNGgoifEP#"}>
-            <img src="fodboldcamp.jpg" alt="" onClick={() => openLightbox(['bog3.jpg'], 0)} />
-          </Link>
-        </div>
+            <img className='fg-img' src="ven.jpg" alt="" onClick={() => openLightbox(['bog3.jpg'], 0)} />
+          </div>
 
-        <div>
-          <p>Sparke-træning den jeg skrev om med Fitness<br />
-            * Træning af de lange spark
-          </p>
-          <Link href={"https://www.facebook.com/lars.ohlen.9/posts/pfbid0wzkcEptNLUMxTUuxoPhHgdobg7zPuQ5TKYKDHtjDGhgUA1E3X6pvFYDPHJZbvCE2l?rdid=VjHbV4FBJK3DdrHc#"}>
-            <img src="sparke.jpg" alt="" onClick={() => openLightbox(['bog3.jpg'], 0)} />
-          </Link>
-        </div>
 
-        <div>
-          <p>* HIO (Hole In One) 🏆<br />
-            * Fodboldgolf FÆNGSLET Horsens ⚽️⛳️🕳<br />
-            * Stærk sidevind 🌬
-          </p>
-          <Link href={"https://www.facebook.com/reel/1293610341722231?rdid=TQ9nv2PMkyOGUYxE&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fr%2F1CRTxkKSeW%2F#"}>
-            <img src="hoi.jpg" alt="" onClick={() => openLightbox(['bog3.jpg'], 0)} />
-          </Link>
-        </div>
+
+
+          <div>
+            <p>Med indunder Ørsted Outdoor - måske du har lagt dem over på Sponsorsiden nu, værs'go:</p>
+            <Link href={"https://www.facebook.com/lars.ohlen.9/posts/pfbid02zjsTWtdqYKhSew6ryrUjwyVvAc5GND3ho3XYUEKULaEgFGYypU9irEWNg1aEtRJ4l?rdid=qfmmx32NNGgoifEP#"}>
+              <img className='fg-img' src="fodboldcamp.jpg" alt="" onClick={() => openLightbox(['bog3.jpg'], 0)} />
+            </Link>
+            
+          </div>
+
+
+
+
+          <div>
+            <p>Sparke-træning den jeg skrev om med Fitness<br />
+              * Træning af de lange spark
+            </p>
+            <Link href={"https://www.facebook.com/lars.ohlen.9/posts/pfbid0wzkcEptNLUMxTUuxoPhHgdobg7zPuQ5TKYKDHtjDGhgUA1E3X6pvFYDPHJZbvCE2l?rdid=VjHbV4FBJK3DdrHc#"}>
+              <img className='fg-img' src="sparke.jpg" alt="" onClick={() => openLightbox(['bog3.jpg'], 0)} />
+            </Link>
+          </div>
+
+          <div>
+            <p>* HIO (Hole In One) 🏆<br />
+              * Fodboldgolf FÆNGSLET Horsens ⚽️⛳️🕳<br />
+              * Stærk sidevind 🌬
+            </p>
+            <Link href={"https://www.facebook.com/reel/1293610341722231?rdid=TQ9nv2PMkyOGUYxE&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fr%2F1CRTxkKSeW%2F#"}>
+              <img className='fg-img' src="hoi.jpg" alt="" onClick={() => openLightbox(['bog3.jpg'], 0)} />
+            </Link>
+          </div>
+          
+          
+          
+          </div>
+
       </article>
-             <Lightbox images={lightboxImages} isOpen={isLightboxOpen} onClose={closeLightbox} />
+      <Lightbox images={lightboxImages} isOpen={isLightboxOpen} onClose={closeLightbox} />
     </div>
   );
 }
