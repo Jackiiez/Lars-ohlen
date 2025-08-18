@@ -2,8 +2,8 @@
   "sponsors": [
      {
       "id": 1,
-      "name": "Ny RØD Teamgeist TG1 i box",
-      "img": "bold1.jpg",
+      "name": "Ny Guld Teamgeist TG1",
+      "img": "guldbold.jpg",
        "img2": "bold2.jpg",
       "text": "",
   "facebook": "https://www.facebook.com/lars.ohlen.9",
@@ -11,15 +11,9 @@
      
       
     },   
-    {
-      "id": 2,
-      "name": "MLS bold - meget sjælden",
-      "img": "bold3.jpg",
-   "facebook": "https://www.facebook.com/lars.ohlen.9",
-      "link": "Du kan også kontakte mig på min mail: Larsohlen67@gmail.com"
-    },
+   
      {
-      "id": 3,
+      "id": 2,
       "name": "Ny RØD Teamgeist TG1 i box",
       "img": "bold1.jpg",
        "img2": "bold2.jpg",
@@ -28,6 +22,12 @@
       "link": "Du kan også kontakte mig på min mail: Larsohlen67@gmail.com"
      
       
+    }, {
+      "id": 3,
+      "name": "MLS bold - meget sjælden",
+      "img": "bold3.jpg",
+   "facebook": "https://www.facebook.com/lars.ohlen.9",
+      "link": "Du kan også kontakte mig på min mail: Larsohlen67@gmail.com"
     },
 
       {

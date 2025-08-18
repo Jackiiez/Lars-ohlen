@@ -1,10 +1,41 @@
 "use client"
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
-export default function Liverpool() {
+import { useEffect, useRef, useState } from 'react';
+export default function Barcalona() {
   const [cards, setCards] = useState([]);
-
+ const [visibleCards, setVisibleCards] = useState([]);
+      const cardRefs = useRef([]);
+      useEffect(() => {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                const cardIndex = parseInt(entry.target.dataset.index);
+                setVisibleCards(prev => [...new Set([...prev, cardIndex])]);
+              }
+            });
+          },
+          {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+          }
+        );
+    
+        cardRefs.current.forEach((ref) => {
+          if (ref) observer.observe(ref);
+        });
+    
+        return () => observer.disconnect();
+      }, []);
+    
+      const setCardRef = (index) => (el) => {
+        cardRefs.current[index] = el;
+      };
   useEffect(() => {
+
+
+
+
     fetch('/videoer.json')
       .then(response => response.json())
       .then(data => {
@@ -27,9 +58,9 @@ export default function Liverpool() {
 
 
             <img className='fif-logo' src="barcalona.png" alt="" /></Link>
-          <p className='intro-text'>Her er det hold som har en meget personlig plads i mit hjerte.</p>
+          {/* <p className='intro-text'>Her er det hold som har en meget personlig plads i mit hjerte.</p>
           <p className='intro-text'>Grunde til det her hold er en af mine personlige favoriter er fordi min søn og hans bedste venner spiller sammen på holdet</p>
-          <p className='intro-text'>på trods af at det bare er et hygge hold så gør det mig inderligt glad at se min søn og hans venner spille kampe selvom det udelukkende er hygge bold</p>
+          <p className='intro-text'>på trods af at det bare er et hygge hold så gør det mig inderligt glad at se min søn og hans venner spille kampe selvom det udelukkende er hygge bold</p> */}
 
 
           <img className='klubhus' src="barcalona-stadium.jpg" alt="" />
@@ -49,7 +80,8 @@ export default function Liverpool() {
               </div>
             ))}
           </div>
-          <div className='fif-content-div'>
+             </div>
+      </section>    <div ref={setCardRef(0)} data-index={0} className={`fif-content-div movie-card ${visibleCards.includes(0) ? 'visible' : ''}`}>
             <hr />
 
 
@@ -60,8 +92,7 @@ export default function Liverpool() {
               <img className='posts-img' src="barca.jpg" alt="" />
             </Link><p className='posts-text'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti necessitatibus cum omnis dicta quibusdam! Reiciendis dolorum dolore, quasi debitis soluta eligendi sint necessitatibus, accusamus tempora rerum aperiam excepturi quia atque!</p>
 
-          </div></div>
-      </section>
+          </div>
     </>
 
   );

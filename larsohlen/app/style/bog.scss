@@ -5,7 +5,7 @@
     display: grid;
     grid-template-columns: 1fr;
     padding: 2rem;
-
+  animation: 2.5s ease-out fadeIn;
     .content {
         display: grid;
         justify-items: center;

@@ -1,8 +1,36 @@
 "use client"
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Video from '../components/jackie';
 export default function Fif() {
+    const [visibleCards, setVisibleCards] = useState([]);
+      const cardRefs = useRef([]);
+      useEffect(() => {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                const cardIndex = parseInt(entry.target.dataset.index);
+                setVisibleCards(prev => [...new Set([...prev, cardIndex])]);
+              }
+            });
+          },
+          {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+          }
+        );
+    
+        cardRefs.current.forEach((ref) => {
+          if (ref) observer.observe(ref);
+        });
+    
+        return () => observer.disconnect();
+      }, []);
+    
+      const setCardRef = (index) => (el) => {
+        cardRefs.current[index] = el;
+      };
     const [cards, setCards] = useState([]);
 
     useEffect(() => {
@@ -50,9 +78,9 @@ export default function Fif() {
                     ))}
                     
                 </div></div>
-                 <div className='fif-content-div'>
+               <div ref={setCardRef(0)} data-index={0} className={`fif-content-div movie-card ${visibleCards.includes(0) ? 'visible' : ''}`}>
                     <hr />
-                    <h2 className='posts-heading'>Gutterne i FIF fejre første sæson sejr ⚽️🏆🥇</h2>
+                    <h2 className='posts-heading'>Gutterne i FIF fejrer første sæson sejr ⚽️🏆🥇</h2>
                     <Video src="fodbold.mp4" 
        />
                    <p className='posts-text'>Jeg ved godt, at Jackie er god til at score damer eller VAR, der er vist en meget sød kæreste nu 💃🫶
@@ -62,7 +90,9 @@ export default function Fif() {
                         og Faiz du er en unik fighter, video 2, stormer frem, ruller rundt, tilbageløb og piver aldrig 🙏</p>
 
                 </div>
-                <div className='fif-content-div'>
+            
+                  
+            </section>         <div ref={setCardRef(1)} data-index={1} className={`fif-content-div movie-card ${visibleCards.includes(1) ? 'visible' : ''}`}>
                     <hr />
                     <h2 className='posts-heading'>Jackie scorer mål for FIF ⚽️🏆🥇</h2>
                     <Link href={"https://www.facebook.com/lars.ohlen.9/posts/pfbid036JFx7vySFU2jXfMM6sXqyEg6XqJpL6iFYVXdt1jFJ2X1qvMBnjBEVCReEvHECB72l?rdid=hDsn2dZYwEwkOG8s#"}>
@@ -76,8 +106,6 @@ export default function Fif() {
                         og Faiz du er en unik fighter, video 2, stormer frem, ruller rundt, tilbageløb og piver aldrig 🙏</p>
 
                 </div>
-                  
-            </section>
         </>
 
     );

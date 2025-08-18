@@ -7,7 +7,7 @@
   text-align: center; // Center text within the container
   display: grid; // Use grid layout
   justify-content: center; // Center items in grid
-
+  animation: 2.5s ease-out fadeIn;
   div {
     margin-bottom: 20px; // Space between stacked divs
     border-radius: 8px;
@@ -18,9 +18,10 @@
     }
 
     img {
-      max-width: 30vw; // Set max width of images to 50vw
+      max-width: 1000px; // Set max width of images to 50vw
       height: auto; // Maintain aspect ratio
       border-radius: 4px;
+      max-height: 800px;
     }
   }
 
@@ -33,6 +34,20 @@
   color: white;
 }
 // Responsive Styles
+
+@media (max-width: 1020px) {
+.baner-container div img {
+
+    max-width: 650px;
+    
+}
+}@media (max-width: 675px){
+  .baner-container div img {
+
+    max-width: 450px;
+    
+}
+}
 @media (max-width: 480px) {
   h1 {
     // font-size: 1.5em; // Adjust heading size for mobile
@@ -41,5 +56,10 @@
   p {
     font-size: 0.9em; // Adjust paragraph size for mobile
   }
+  .baner-container div img {
+
+    max-width: 90vw;
+    
+}
 }
 

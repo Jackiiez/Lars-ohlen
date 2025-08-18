@@ -73,9 +73,12 @@
 a{
     margin: 0 auto;
 }
-
+.cards{
+      animation: 2.5s ease-out fadeIn;
+}
 
 @media (max-width: 768px) {
+
     .card {
 
         max-width: 100%;
@@ -110,5 +113,6 @@ a{
      grid-auto-flow: row; 
   gap: 1rem
 ;
+  margin: 0 auto;
 }
 }

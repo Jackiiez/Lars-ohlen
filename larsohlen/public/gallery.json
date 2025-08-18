@@ -117,6 +117,124 @@
           "heading": "Fodbold"
         }
       ]
+    }, {
+      "heading": "Daniel",
+      "galleryItems": [
+        {
+          "id": 8,
+          "title": "Jysk Lokal Forsikring",
+          "image": "dm1.jpg",
+          "description": "Local insurance services.",
+          "link": "https://jysklokalforsikring.dk/"
+        },     {
+          "id": 9,
+          "title": "Familie",
+          "image": "dm2.jpg",
+          "description": "Local insurance services.",
+          "link": "https://jysklokalforsikring.dk/"
+        },     {
+          "id": 10,
+          "title": "Jysk Lokal Forsikring",
+          "image": "dm3.jpg",
+          "description": "Local insurance services.",
+          "link": "https://jysklokalforsikring.dk/"
+        },     {
+          "id": 11,
+          "title": "Jysk Lokal Forsikring",
+          "image": "dm4.jpg",
+          "description": "Local insurance services.",
+          "link": "https://jysklokalforsikring.dk/"
+        },
+        {
+          "id": 12,
+          "title": "Jysk Lokal Forsikring",
+          "image": "dm5.jpg",
+          "description": "Local insurance services.",
+          "link": "https://jysklokalforsikring.dk/"
+        },
+        {
+          "id": 13,
+          "title": "Jysk Lokal Forsikring",
+          "image": "Jysk.jpg",
+          "description": "Local insurance services.",
+          "link": "https://jysklokalforsikring.dk/",
+          "heading": "Fodbold-golf"
+        },
+        {
+          "id": 14,
+          "title": "Jysk Lokal Forsikring",
+          "image": "Jysk.jpg",
+          "description": "Local insurance services.",
+          "link": "https://jysklokalforsikring.dk/"
+        },
+        {
+          "id": 15,
+          "title": "Jysk Lokal Forsikring",
+          "image": "Jysk.jpg",
+          "description": "Local insurance services.",
+          "link": "https://jysklokalforsikring.dk/",
+          "heading": "Fodbold"
+        }
+      ]
+    }, {
+      "heading": "Sport",
+      "galleryItems": [
+        {
+          "id": 8,
+          "title": "Jysk Lokal Forsikring",
+          "image": "dm1.jpg",
+          "description": "Local insurance services.",
+          "link": "https://jysklokalforsikring.dk/"
+        },     {
+          "id": 9,
+          "title": "Familie",
+          "image": "dm2.jpg",
+          "description": "Local insurance services.",
+          "link": "https://jysklokalforsikring.dk/"
+        },     {
+          "id": 10,
+          "title": "Jysk Lokal Forsikring",
+          "image": "dm3.jpg",
+          "description": "Local insurance services.",
+          "link": "https://jysklokalforsikring.dk/"
+        },     {
+          "id": 11,
+          "title": "Jysk Lokal Forsikring",
+          "image": "dm4.jpg",
+          "description": "Local insurance services.",
+          "link": "https://jysklokalforsikring.dk/"
+        },
+        {
+          "id": 12,
+          "title": "Jysk Lokal Forsikring",
+          "image": "dm5.jpg",
+          "description": "Local insurance services.",
+          "link": "https://jysklokalforsikring.dk/"
+        },
+        {
+          "id": 13,
+          "title": "Jysk Lokal Forsikring",
+          "image": "Jysk.jpg",
+          "description": "Local insurance services.",
+          "link": "https://jysklokalforsikring.dk/",
+          "heading": "Fodbold-golf"
+        },
+        {
+          "id": 14,
+          "title": "Jysk Lokal Forsikring",
+          "image": "Jysk.jpg",
+          "description": "Local insurance services.",
+          "link": "https://jysklokalforsikring.dk/"
+        },
+        {
+          "id": 15,
+          "title": "Jysk Lokal Forsikring",
+          "image": "Jysk.jpg",
+          "description": "Local insurance services.",
+          "link": "https://jysklokalforsikring.dk/",
+          "heading": "Fodbold"
+        }
+      ]
     }
 
 
