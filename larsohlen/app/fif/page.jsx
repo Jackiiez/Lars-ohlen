@@ -34,15 +34,15 @@ export default function Fif() {
     const [cards, setCards] = useState([]);
 
     useEffect(() => {
-        fetch('/videoer.json')
+        fetch('/fif.json')
             .then(response => response.json())
             .then(data => {
                 console.log('Fetched data:', data);
 
-                if (Array.isArray(data.sponsors)) {
-                    setCards(data.sponsors);
+                if (Array.isArray(data.fif)) {
+                    setCards(data.fif);
                 } else {
-                    console.error('Sponsors is not a valid array:', data.sponsors);
+                    console.error('Sponsors is not a valid array:', data.fif);
                     setCards([]);
                 }
             })
@@ -82,6 +82,18 @@ export default function Fif() {
                     <hr />
                     <h2 className='posts-heading'>Gutterne i FIF fejrer første sæson sejr ⚽️🏆🥇</h2>
                     <Video src="fodbold.mp4" 
+       />
+                   <p className='posts-text'>Jeg ved godt, at Jackie er god til at score damer eller VAR, der er vist en meget sød kæreste nu 💃🫶
+                        Jeg ved godt, at Jackie er god til at lave insta .....
+                        MEN al den snak om ALLE de mål Jackie scorer for FIF ⚽⚽⚽⚽⚽ var jeg træt at høre om hele tiden.
+                        "Lars, Lars du kom for sent, jeg har scoret 2 mål og lavet 1 assist i første halvleg ..... men se første video SÅDAN JACKS 💪⚽✌️
+                        og Faiz du er en unik fighter, video 2, stormer frem, ruller rundt, tilbageløb og piver aldrig 🙏</p>
+
+                </div>
+                          <div ref={setCardRef(0)} data-index={0} className={`fif-content-div movie-card ${visibleCards.includes(0) ? 'visible' : ''}`}>
+                    <hr />
+                    <h2 className='posts-heading'>Klip fra en fif kamp ⚽️🏆🥇</h2>
+                    <Video src="kamp.mp4" 
        />
                    <p className='posts-text'>Jeg ved godt, at Jackie er god til at score damer eller VAR, der er vist en meget sød kæreste nu 💃🫶
                         Jeg ved godt, at Jackie er god til at lave insta .....
