@@ -43,15 +43,15 @@ export default function Liverpool() {
   const [cards, setCards] = useState([]);
 
   useEffect(() => {
-    fetch('/videoer.json')
+    fetch('/liverpool.json')
       .then(response => response.json())
       .then(data => {
         console.log('Fetched data:', data);
 
-        if (Array.isArray(data.sponsors)) {
-          setCards(data.sponsors);
+        if (Array.isArray(data.liverpool)) {
+          setCards(data.liverpool);
         } else {
-          console.error('Sponsors is not a valid array:', data.sponsors);
+          console.error('Sponsors is not a valid array:', data.liverpool);
           setCards([]);
         }
       })
