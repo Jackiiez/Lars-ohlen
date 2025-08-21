@@ -7,6 +7,7 @@ export default function Galleri() {
   const [isLightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxImages, setLightboxImages] = useState([]);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [visibleItems, setVisibleItems] = useState(10); // Number of items to show
   const cardRefs = useRef([]);
 
   const setCardRef = (index) => (el) => {
@@ -21,6 +22,10 @@ export default function Galleri() {
 
   const closeLightbox = () => {
     setLightboxOpen(false);
+  };
+
+  const loadMoreItems = () => {
+    setVisibleItems((prev) => prev + 10); // Load 10 more items
   };
 
   useEffect(() => {
@@ -49,14 +54,13 @@ export default function Galleri() {
             <div key={section.heading} className="gallery-section">
               <h2 className="section-heading">{section.heading}</h2>
               <div className="gallery">
-                {section.galleryItems.map(item => (
+                {section.galleryItems.slice(0, visibleItems).map(item => (
                   <div key={item.id} className="gallery-item" ref={setCardRef(item.id)}>
                     {item.image.endsWith('.mp4') ? (
                       <video
                         className="gallery-video"
                         src={item.image}
                         alt={item.title}
-                     
                         controls
                       />
                     ) : (
@@ -74,6 +78,11 @@ export default function Galleri() {
           ))
         ) : (
           <p>No gallery items available.</p>
+        )}
+        {visibleItems < sections.reduce((acc, section) => acc + section.galleryItems.length, 0) && (
+          <button onClick={loadMoreItems} className="load-more-button">
+            Load More
+          </button>
         )}
         <Lightbox images={lightboxImages} isOpen={isLightboxOpen} onClose={closeLightbox} />
       </div>
