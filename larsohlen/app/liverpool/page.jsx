@@ -109,6 +109,31 @@ export default function Liverpool() {
           COME ON “ THE REDS ❤️🔴❤️🔴❤️🔴❤️🔴 4 - 0 🙏🏻🙏🏻🙏🏻🙏🏻⚽️⚽️⚽️⚽️ 🙏🏻🙏🏻🙏🏻🙏🏻JA TAK ⚽️⚽️⚽️⚽️</p>
 
       </div>
+         <div ref={setCardRef(0)} data-index={0} className={`fif-content-div movie-card ${visibleCards.includes(0) ? 'visible' : ''}`}>
+        <hr />
+
+
+        <h2 className='posts-heading'>2-0 på Anfield ⚽️🏆🥇</h2>
+        <Link href={"https://www.facebook.com/lars.ohlen.9/posts/pfbid02qfazLzvotZEYUGWhMyySscSbnwvQroeyBd9qrJZwWeLBk379XGWTdZqJigPTMSqml?rdid=q7F0Vzq71R1bYqU2#"}>
+          Klik her eller på billedet for at gå vidre til Postet</Link>
+        <Link href={"https://www.facebook.com/lars.ohlen.9/posts/pfbid02qfazLzvotZEYUGWhMyySscSbnwvQroeyBd9qrJZwWeLBk379XGWTdZqJigPTMSqml?rdid=q7F0Vzq71R1bYqU2#"}>
+          <img className='posts-img' src="anfield1.jpg" alt="" />
+        </Link><p className='posts-text'>THE GRUMPHY OLD MAN😡 VERY HAPPY AT ANFIELD 😀🙏🏻‼️🏆🥇⚽️🇬🇧1 MINUT AFTER 1. GOAL COMES THIS:
+REDS - GUNNERS 2 - 0 🇬🇧⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿</p>
+
+      </div>
+          {/* <div ref={setCardRef(0)} data-index={0} className={`fif-content-div movie-card ${visibleCards.includes(0) ? 'visible' : ''}`}>
+        <hr />
+
+
+        <h2 className='posts-heading'>Cool ink Tatoo</h2>
+        <Link href={"https://www.facebook.com/story.php?story_fbid=2684811084914630&id=100001572951936&mibextid=wwXIfr&rdid=vPEVQmJYgmPgZTgR#"}>
+          Klik her eller på billedet for at gå vidre til Postet</Link>
+        <Link href={"https://www.facebook.com/coolink.dk/?locale=da_DK"}>
+          <img className='posts-img' src="tatoo.jpg" alt="" />
+        </Link><p className='posts-text'>Cool Ink Tattoo som har lavet min tatovering med YNWA</p>
+
+      </div> */}
     </>
 
   );

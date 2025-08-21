@@ -3,6 +3,14 @@
  margin: 0 auto;
 
 }
+.grid-layout{
+        grid-template-columns: repeat(2, 1fr);
+    display: grid
+;
+    width: fit-content;
+    margin: 0 auto;
+    gap: 2rem;
+}
 .klubhus{
     margin: 0 auto;
   max-width: 85vw;

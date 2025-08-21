@@ -116,10 +116,12 @@ export default function Home() {
           <hr className="divider" />
 
           <div className="coming-soon-container">
+            <p>videoer</p>
             <div className="movies-grid slider">
+              
               <div ref={setCardRef(1)} data-index={1} className={`movie-card ${visibleCards.includes(1) ? 'visible' : ''}`}>
                 <video controls width="500">
-                  <source src="fodbold.mp4" type="video/mp4" />
+                  <source src="video1.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
                 <div className="movie-info">

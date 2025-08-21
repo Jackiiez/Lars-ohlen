@@ -47,21 +47,26 @@ export default function Galleri() {
         {Array.isArray(sections) && sections.length > 0 ? (
           sections.map(section => (
             <div key={section.heading} className="gallery-section">
-
-
-              
               <h2 className="section-heading">{section.heading}</h2>
               <div className="gallery">
-
                 {section.galleryItems.map(item => (
                   <div key={item.id} className="gallery-item" ref={setCardRef(item.id)}>
-                    <img
-                      src={item.image}
-                      alt={item.title}
-                      className="gallery-image"
-                      onClick={() => openLightbox([item.image], 0)}
-                    />
-                  
+                    {item.image.endsWith('.mp4') ? (
+                      <video
+                        className="gallery-video"
+                        src={item.image}
+                        alt={item.title}
+                     
+                        controls
+                      />
+                    ) : (
+                      <img
+                        src={item.image}
+                        alt={item.title}
+                        className="gallery-image"
+                        onClick={() => openLightbox([item.image], 0)}
+                      />
+                    )}
                   </div>
                 ))}
               </div>

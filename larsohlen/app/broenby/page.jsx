@@ -102,6 +102,20 @@ export default function Liverpool() {
         </Link><p className='posts-text'>Life is good ❤️☀️💙💛⚽️ hov Mr Vibæk og Emil Stabil .....</p>
 
       </div>
+      
+      <div ref={setCardRef(0)} data-index={0} className={`fif-content-div movie-card ${visibleCards.includes(0) ? 'visible' : ''}`}>
+
+        <hr />
+
+        <h2 className='posts-heading'>Så vandt vi igen⚽️🏆🥇</h2>
+        <Link href={"https://www.facebook.com/lars.ohlen.9/posts/pfbid0mVMrBwTx39D1G66uGhBXFcb44K5cvSJwWdRvcgkBxET42uYJ3q41cYqawZ97JLLTl?rdid=sOCE55cJS6nI4MFv#"}>
+          Klik her eller på billedet for at gå vidre til Postet</Link>
+        <Link href={"https://www.facebook.com/lars.ohlen.9/posts/pfbid0mVMrBwTx39D1G66uGhBXFcb44K5cvSJwWdRvcgkBxET42uYJ3q41cYqawZ97JLLTl?rdid=sOCE55cJS6nI4MFv#"}>
+          <img className='posts-img' src="bifven.jpg" alt="" />
+        </Link><p className='posts-text'>SEJR 🐣💙⚽️
+4 - 3 ‼️🐣💙⚽️</p>
+
+      </div>
     </>
 
   );

@@ -33,7 +33,7 @@ $font-family: 'Arial', sans-serif;
             transform: scale(1.05);
         }
 
-        .gallery-image {
+        .gallery-image, video {
             
             display: block;
                 height: 200px;
@@ -43,6 +43,10 @@ $font-family: 'Arial', sans-serif;
     place-self: center;
     width: 25vh;
         }
+          video:fullscreen{
+              object-fit: none;
+            }
+        
 
         .gallery-info {
             padding: 15px;

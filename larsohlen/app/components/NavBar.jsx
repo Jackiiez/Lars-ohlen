@@ -78,6 +78,12 @@ export default function NavBar() {
                         </Link>
 
                     </li>
+                       <li className="navbar-item" onClick={() => handleItemClick(5)} >
+                        <Link href="/loeb" className="navbar-link" onClick={() => setIsOpen(false)}>
+                            <p>Løb og bevægelse</p>
+                        </Link>
+
+                    </li>
                     <li className="navbar-item">
                         <Link href="/" className="navbar-link" onClick={() => setIsOpen(false)}>
                             ⚽️⛳️🕳

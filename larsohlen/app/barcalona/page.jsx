@@ -36,15 +36,15 @@ export default function Barcalona() {
 
 
 
-    fetch('/videoer.json')
+    fetch('/barca.json')
       .then(response => response.json())
       .then(data => {
         console.log('Fetched data:', data);
 
-        if (Array.isArray(data.sponsors)) {
-          setCards(data.sponsors);
+        if (Array.isArray(data.barca)) {
+          setCards(data.barca);
         } else {
-          console.error('Sponsors is not a valid array:', data.sponsors);
+          console.error('Sponsors is not a valid array:', data.barca);
           setCards([]);
         }
       })

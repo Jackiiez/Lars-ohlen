@@ -93,8 +93,13 @@ export default function Fif() {
                           <div ref={setCardRef(0)} data-index={0} className={`fif-content-div movie-card ${visibleCards.includes(0) ? 'visible' : ''}`}>
                     <hr />
                     <h2 className='posts-heading'>Klip fra en fif kamp ⚽️🏆🥇</h2>
+                    <div className='grid-layout'>
                     <Video src="kamp.mp4" 
        />
+        <Video src="fifvideo2.mp4" 
+       />  <Video src="fifvideo3.mp4" 
+       />  <Video src="fifvideo4.mp4" 
+       /></div>
                    <p className='posts-text'>Jeg ved godt, at Jackie er god til at score damer eller VAR, der er vist en meget sød kæreste nu 💃🫶
                         Jeg ved godt, at Jackie er god til at lave insta .....
                         MEN al den snak om ALLE de mål Jackie scorer for FIF ⚽⚽⚽⚽⚽ var jeg træt at høre om hele tiden.
