@@ -69,7 +69,7 @@ export default function NavBar() {
                             <li><Link href="/broenby" onClick={() => setIsOpen(false)}>Brøndby</Link></li>
                               <li><Link href="/liverpool" onClick={() => setIsOpen(false)}>Liverpool</Link></li>
                             <li><Link href="/barcalona" onClick={() => setIsOpen(false)}>Barcelona</Link></li>
-                            <li><Link href="/fif" onClick={() => setIsOpen(false)}>FIF</Link></li>
+                            <li><Link href="/fif" onClick={() => setIsOpen(false)}>FIF-Hillerød</Link></li>
                         </ul>
                     </li>
                     <li className="navbar-item" onClick={() => handleItemClick(5)} >
@@ -80,7 +80,7 @@ export default function NavBar() {
                     </li>
                        <li className="navbar-item" onClick={() => handleItemClick(5)} >
                         <Link href="/loeb" className="navbar-link" onClick={() => setIsOpen(false)}>
-                            <p>Løb og bevægelse</p>
+                            <p>Sport inkl. løb</p>
                         </Link>
 
                     </li>

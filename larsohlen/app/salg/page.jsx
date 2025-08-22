@@ -54,7 +54,7 @@ export default function Salg() {
                         <div key={index} className="itemdiv">
                             <div className="card">
                                 <h3 className='item-title'>{card.name}</h3>
-                                <p className='item-title'>{card.text}</p>
+                              
 
 
 

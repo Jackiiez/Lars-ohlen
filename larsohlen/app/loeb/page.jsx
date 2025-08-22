@@ -11,6 +11,23 @@ export default function Loeb() {
 Drømmen var en gang at løbe samlet en gang rundt om jorden - 40.000 km</p>
 
 <p className="title sponsore-heading">Højdepunkter:</p>
+* En af mine 3-5 største sportslige bedrifter
+* Copenhagen Marathon på 2:58:54
+* Der var aldrig en krise undervejs. 
+* Jeg lagde dog for hårdt ud, hvilket er en klassiker
+* Det var "kun" min 4. maraton
+* Jeg havde ikke taget løbetræner-uddannelsen endnu
+* og heller ikke fundet min guidance Jack Daniels Running Formular:
+
+<Link href={"https://www.saxo.com/dk/daniels-running-formula_jack-daniels_paperback_9781718203662?msclkid=377b5c9894c6158c9fb934e16c737476&utm_source=bing&utm_medium=cpc&utm_campaign=Standard%20Shopping%20%7C%20Engelsk&utm_term=4576442302288169&utm_content=Profitable"}>
+link til Daniels' Running Formula </Link>
+
+ <Link href={"https://www.facebook.com/lars.ohlen.9/posts/pfbid0gV5ZG1jtbFT1ACCKSLrSd3f1vrFNjioSe1r2rKwZwkunBDmd6KFXaeR37fFneXZfl?rdid=LLVkHqjMCmAxWE5T#"}>
+ <img src="marton1.jpg" alt="" /></Link>
+ <p>2.58.54 Copenhagen marathon 2000 {"<"} 3 T ({"< "}3 hours)</p>
+</div>
+  <hr className="loeb-hr" />
+ <div className="løbe-div">
 
 <p> Certificeret Motionist løbetræner fra Dansk Atletik Forbund</p>
 <p>* Maraton 2.58.54</p>
@@ -28,26 +45,9 @@ Drømmen var en gang at løbe samlet en gang rundt om jorden - 40.000 km</p>
 <p>* De sidste 7 km i Central Park føltes som at deltage i en landskamp i Parken</p>
 <p>* Vi blev båret af tilskuerne i mål</p>
 <p>* Jeg får stadig gåsehud, når jeg skriver det ❤</p>
-
  <Link href={"https://www.facebook.com/photo/?fbid=9637431562985846&set=pcb.9558796594182677"}>
- <img src="marton.jpg" alt="" /></Link></div>
-  <hr className="loeb-hr" />
- <div className="løbe-div">
-* En af mine 3-5 største sportslige bedrifter
-* Copenhagen Marathon på 2:58:54
-* Der var aldrig en krise undervejs. 
-* Jeg lagde dog for hårdt ud, hvilket er en klassiker
-* Det var "kun" min 4. maraton
-* Jeg havde ikke taget løbetræner-uddannelsen endnu
-* og heller ikke fundet min guidance Jack Daniels Running Formular:
+ <img src="marton.jpg" alt="" /></Link>
 
-
-<Link href={"https://www.saxo.com/dk/daniels-running-formula_jack-daniels_paperback_9781718203662?msclkid=377b5c9894c6158c9fb934e16c737476&utm_source=bing&utm_medium=cpc&utm_campaign=Standard%20Shopping%20%7C%20Engelsk&utm_term=4576442302288169&utm_content=Profitable"}>
-link til Daniels' Running Formula </Link>
-
- <Link href={"https://www.facebook.com/lars.ohlen.9/posts/pfbid0gV5ZG1jtbFT1ACCKSLrSd3f1vrFNjioSe1r2rKwZwkunBDmd6KFXaeR37fFneXZfl?rdid=LLVkHqjMCmAxWE5T#"}>
- <img src="marton1.jpg" alt="" /></Link>
- <p>2.58.54 Copenhagen marathon 2000 {"<"} 3 T ({"< "}3 hours)</p>
 </div>
 
 

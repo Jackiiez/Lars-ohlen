@@ -1,7 +1,41 @@
 "use client"
+import Lightbox from '../components/lightbox';
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 export default function Liverpool() {
+
+
+
+
+
+
+
+   const [lightboxImages, setLightboxImages] = useState([]);
+      const [isLightboxOpen, setLightboxOpen] = useState(false);
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+
+
+
+
+
+      const openLightbox = (images, index) => {
+        setLightboxImages(images);
+        setCurrentImageIndex(index);
+        setLightboxOpen(true);
+      };
+    
+      const closeLightbox = () => {
+        setLightboxOpen(false);
+      };
+
+
+
+
+
+
+
+
 
   const [visibleCards, setVisibleCards] = useState([]);
   const cardRefs = useRef([]);
@@ -66,7 +100,7 @@ export default function Liverpool() {
           <p className='intro-text'>på trods af at det bare er et hygge hold så gør det mig inderligt glad at se min søn og hans venner spille kampe selvom det udelukkende er hygge bold</p> */}
 
 
-          <img className='klubhus' src="cykel.jpg" alt="" />
+          <img className='klubhus' src="cykel.jpg" alt="" onClick={() => openLightbox(["cykel.jpg"], 0)} />
         </div>
         <div className="comming-soon-container">
 
@@ -74,7 +108,7 @@ export default function Liverpool() {
             {cards.map(card => (
               <div key={card.id} className="movie-card">
 
-                <img src={card.img} alt={card.name} />
+                <img src={card.img} alt={card.name} onClick={() => openLightbox([card.img], 0)} />
 
                 <div className="movie-info">
                   <h3>{card.name}</h3>
@@ -116,6 +150,7 @@ export default function Liverpool() {
 4 - 3 ‼️🐣💙⚽️</p>
 
       </div>
+           <Lightbox images={lightboxImages} isOpen={isLightboxOpen} onClose={closeLightbox} />
     </>
 
   );

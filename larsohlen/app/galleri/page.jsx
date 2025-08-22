@@ -25,7 +25,7 @@ export default function Galleri() {
   };
 
   const loadMoreItems = () => {
-    setVisibleItems((prev) => prev + 10); // Load 10 more items
+    setVisibleItems((prev) => prev + 15); // Load 10 more items
   };
 
   useEffect(() => {

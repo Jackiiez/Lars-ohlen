@@ -1,7 +1,45 @@
 "use client"
 import Link from 'next/link';
+import Lightbox from '../components/lightbox';
 import { useEffect, useRef, useState } from 'react';
 export default function Barcalona() {
+
+
+
+
+
+
+
+
+      const [lightboxImages, setLightboxImages] = useState([]);
+      const [isLightboxOpen, setLightboxOpen] = useState(false);
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+
+
+
+
+
+      const openLightbox = (images, index) => {
+        setLightboxImages(images);
+        setCurrentImageIndex(index);
+        setLightboxOpen(true);
+      };
+    
+      const closeLightbox = () => {
+        setLightboxOpen(false);
+      };
+
+
+
+
+
+
+
+
+
+
+
   const [cards, setCards] = useState([]);
  const [visibleCards, setVisibleCards] = useState([]);
       const cardRefs = useRef([]);
@@ -71,7 +109,7 @@ export default function Barcalona() {
             {cards.map(card => (
               <div key={card.id} className="movie-card">
 
-                <img src={card.img} alt={card.name} />
+                <img src={card.img} alt={card.name} onClick={() => openLightbox([card.img], 0)} />
 
                 <div className="movie-info">
                   <h3>{card.name}</h3>
@@ -93,6 +131,7 @@ export default function Barcalona() {
             </Link><p className='posts-text'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti necessitatibus cum omnis dicta quibusdam! Reiciendis dolorum dolore, quasi debitis soluta eligendi sint necessitatibus, accusamus tempora rerum aperiam excepturi quia atque!</p>
 
           </div>
+               <Lightbox images={lightboxImages} isOpen={isLightboxOpen} onClose={closeLightbox} />
     </>
 
   );

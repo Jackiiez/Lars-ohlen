@@ -1,8 +1,44 @@
 "use client"
 import Link from 'next/link';
+
+import Lightbox from '../components/lightbox';
 import { useEffect, useRef, useState } from 'react';
 import Video from '../components/jackie';
 export default function Fif() {
+
+
+
+
+    
+      const [lightboxImages, setLightboxImages] = useState([]);
+      const [isLightboxOpen, setLightboxOpen] = useState(false);
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+
+
+
+
+
+      const openLightbox = (images, index) => {
+        setLightboxImages(images);
+        setCurrentImageIndex(index);
+        setLightboxOpen(true);
+      };
+    
+      const closeLightbox = () => {
+        setLightboxOpen(false);
+      };
+
+
+
+
+
+
+
+
+
+
+
     const [visibleCards, setVisibleCards] = useState([]);
       const cardRefs = useRef([]);
       useEffect(() => {
@@ -51,7 +87,7 @@ export default function Fif() {
     return (
         <>
             <section className='fif-section'>
-                <div className='fif-info-div'> <Link className='intro-text' href={"https://www.fif-hillerod.dk/"}><h1 className='sponsore-heading'>FIF-Fodbold</h1></Link>
+                <div className='fif-info-div'> <Link className='intro-text' href={"https://www.fif-hillerod.dk/"}><h1 className='sponsore-heading'>Daniel, Ras, Faiz og Jackie´s fodboldhold</h1></Link>
                     <Link className='intro-text' href={"https://www.fif-hillerod.dk/"}>
 
 
@@ -61,14 +97,14 @@ export default function Fif() {
                     <p className='intro-text'>på trods af at det bare er et hygge hold så gør det mig inderligt glad at se min søn og hans venner spille kampe selvom det udelukkende er hygge bold</p>
 
 
-                    <img className='klubhus' src="klubhus.jpg" alt="" />
+                    <img className='klubhus' src="klubhus.jpg" alt="" onClick={() => openLightbox(['klubhus.jpg'], 0)}/>
                 </div>
                 <div className="comming-soon-container">
                 <div className="movies-grid slider">
                     {cards.map(card => (
                         <div key={card.id} className="movie-card">
 
-                            <img src={card.img} alt={card.name} />
+                            <img src={card.img} alt={card.name} onClick={() => openLightbox([card.img], 0)} />
 
                             <div className="movie-info">
                                 <h3>{card.name}</h3>
@@ -123,6 +159,8 @@ export default function Fif() {
                         og Faiz du er en unik fighter, video 2, stormer frem, ruller rundt, tilbageløb og piver aldrig 🙏</p>
 
                 </div>
+
+     <Lightbox images={lightboxImages} isOpen={isLightboxOpen} onClose={closeLightbox} />
         </>
 
     );

@@ -22,11 +22,11 @@
       "link": "Du kan også kontakte mig på min mail: Larsohlen67@gmail.com"
      
       
-    }, {
-      "id": 3,
-      "name": "MLS bold - meget sjælden",
-      "img": "bold3.jpg",
-   "facebook": "https://www.facebook.com/lars.ohlen.9",
+    },  {
+      "id": 8,
+      "name": "Blå Brøndby jeton",
+      "img": "blåjeton.jpg",
+  "facebook": "https://www.facebook.com/lars.ohlen.9",
       "link": "Du kan også kontakte mig på min mail: Larsohlen67@gmail.com"
     },
 
@@ -66,13 +66,7 @@
    "facebook": "https://www.facebook.com/lars.ohlen.9",
       "link": "Du kan også kontakte mig på min mail: Larsohlen67@gmail.com"
     },
-    {
-      "id": 8,
-      "name": "Blå Brøndby jeton",
-      "img": "blåjeton.jpg",
-  "facebook": "https://www.facebook.com/lars.ohlen.9",
-      "link": "Du kan også kontakte mig på min mail: Larsohlen67@gmail.com"
-    },
+   
  
     
     {
@@ -104,9 +98,31 @@
    "facebook": "https://www.facebook.com/lars.ohlen.9",
       "link": "Du kan også kontakte mig på min mail: Larsohlen67@gmail.com"
     }
-
+,
+    {
+      "id": 13,
+      "name": "Baskettrøje Joma- 1XL",
+      "img": "baskettrøje1.jpg",
+      "text": "Link",
+        "facebook": "https://www.facebook.com/lars.ohlen.9",
+      "link": "Du kan også kontakte mig på min mail: Larsohlen67@gmail.com"
+    },
+    {
+      "id": 14,
+      "name": "Baskettrøjer - 1XL/2XL",
+      "img": "baskettrøje2.jpg",
+   "facebook": "https://www.facebook.com/lars.ohlen.9",
+      "link": "Du kan også kontakte mig på min mail: Larsohlen67@gmail.com"
+    },
+    {
+      "id": 15,
+      "name": "Lærredstryk, Matteo Colombo",
+      "img": "lærredestykke.jpg",
+   "facebook": "https://www.facebook.com/lars.ohlen.9",
+      "link": "Du kan også kontakte mig på min mail: Larsohlen67@gmail.com"
+    }
   
   
  
   ]
-}
+} 
