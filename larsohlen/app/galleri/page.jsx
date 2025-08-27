@@ -7,8 +7,10 @@ export default function Galleri() {
   const [isLightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxImages, setLightboxImages] = useState([]);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [visibleItems, setVisibleItems] = useState(10); // Number of items to show
   const cardRefs = useRef([]);
+
+
+  const [visibleItems, setVisibleItems] = useState({});
 
   const setCardRef = (index) => (el) => {
     cardRefs.current[index] = el;
@@ -24,8 +26,18 @@ export default function Galleri() {
     setLightboxOpen(false);
   };
 
-  const loadMoreItems = () => {
-    setVisibleItems((prev) => prev + 15); // Load 10 more items
+  const loadMoreItems = (sectionHeading) => {
+    setVisibleItems(prev => ({
+      ...prev,
+      [sectionHeading]: (prev[sectionHeading] || 0) + 15
+    }));
+  };
+
+  const showLessItems = (sectionHeading) => {
+    setVisibleItems(prev => ({
+      ...prev,
+      [sectionHeading]: Math.max((prev[sectionHeading] || 0) - 15, 15)
+    }));
   };
 
   useEffect(() => {
@@ -39,6 +51,12 @@ export default function Galleri() {
       .then(data => {
         console.log('Fetched data:', data);
         setGalleryItems(data.sections || []);
+        
+        const initialVisibleItems = {};
+        data.sections.forEach(section => {
+          initialVisibleItems[section.heading] = 15; 
+        });
+        setVisibleItems(initialVisibleItems);
       })
       .catch(error => {
         console.error('Error fetching gallery items:', error);
@@ -54,7 +72,7 @@ export default function Galleri() {
             <div key={section.heading} className="gallery-section">
               <h2 className="section-heading">{section.heading}</h2>
               <div className="gallery">
-                {section.galleryItems.slice(0, visibleItems).map(item => (
+                {section.galleryItems.slice(0, visibleItems[section.heading] || 0).map(item => (
                   <div key={item.id} className="gallery-item" ref={setCardRef(item.id)}>
                     {item.image.endsWith('.mp4') ? (
                       <video
@@ -74,15 +92,20 @@ export default function Galleri() {
                   </div>
                 ))}
               </div>
+              {visibleItems[section.heading] < section.galleryItems.length && (
+                <button onClick={() => loadMoreItems(section.heading)} className="load-more-button">
+                  Load More
+                </button>
+              )}
+              {visibleItems[section.heading] > 15 && (
+                <button onClick={() => showLessItems(section.heading)} className="show-less-button">
+                  Show Less
+                </button>
+              )}
             </div>
           ))
         ) : (
           <p>No gallery items available.</p>
-        )}
-        {visibleItems < sections.reduce((acc, section) => acc + section.galleryItems.length, 0) && (
-          <button onClick={loadMoreItems} className="load-more-button">
-            Load More
-          </button>
         )}
         <Lightbox images={lightboxImages} isOpen={isLightboxOpen} onClose={closeLightbox} />
       </div>
