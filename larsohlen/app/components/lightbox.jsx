@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import '../style/lightbox.scss';
-
+import React from 'react';
 
 
 const Lightbox = ({ images, isOpen, onClose }) => {

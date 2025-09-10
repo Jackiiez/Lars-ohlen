@@ -1,4 +1,5 @@
 "use client"
+import React from 'react';
 import Lightbox from '../components/lightbox';
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
