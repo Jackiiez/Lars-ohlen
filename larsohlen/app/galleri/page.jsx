@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useEffect, useRef, useState } from 'react';
 import Lightbox from '../components/lightbox';
 
@@ -7,7 +6,7 @@ export default function Galleri() {
   const [sections, setGalleryItems] = useState([]);
   const [isLightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxImages, setLightboxImages] = useState([]);
-  const [ setCurrentImageIndex] = useState(0);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const cardRefs = useRef([]);
 
 

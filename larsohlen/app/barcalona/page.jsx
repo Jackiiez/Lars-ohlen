@@ -1,5 +1,4 @@
 "use client"
-import React from 'react';
 import Link from 'next/link';
 import Lightbox from '../components/lightbox';
 import { useEffect, useRef, useState } from 'react';
@@ -14,7 +13,7 @@ export default function Barcalona() {
 
       const [lightboxImages, setLightboxImages] = useState([]);
       const [isLightboxOpen, setLightboxOpen] = useState(false);
-    const [ setCurrentImageIndex] = useState(0);
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
 
 

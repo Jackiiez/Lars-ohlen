@@ -1,6 +1,6 @@
 "use client"
 import Link from 'next/link';
-import React from 'react';
+
 import Lightbox from '../components/lightbox';
 import { useEffect, useRef, useState } from 'react';
 import Video from '../components/jackie';
@@ -12,7 +12,7 @@ export default function Fif() {
     
       const [lightboxImages, setLightboxImages] = useState([]);
       const [isLightboxOpen, setLightboxOpen] = useState(false);
-    const [ setCurrentImageIndex] = useState(0);
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
 
 
