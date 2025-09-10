@@ -7,7 +7,7 @@ export default function Galleri() {
   const [sections, setGalleryItems] = useState([]);
   const [isLightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxImages, setLightboxImages] = useState([]);
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [ setCurrentImageIndex] = useState(0);
   const cardRefs = useRef([]);
 
 

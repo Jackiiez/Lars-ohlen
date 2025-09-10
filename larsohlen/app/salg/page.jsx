@@ -9,7 +9,7 @@ export default function Salg() {
     const cardRefs = useRef([]);
     const [lightboxImages, setLightboxImages] = useState([]);
     const [isLightboxOpen, setLightboxOpen] = useState(false);
-    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const [ setCurrentImageIndex] = useState(0);
     const [cards, setCards] = useState([]);
 
     useEffect(() => {
