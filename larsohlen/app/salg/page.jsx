@@ -1,5 +1,4 @@
 "use client"
-import React from 'react';
 import Link from 'next/link';
 import { useEffect, useState, useRef } from 'react';
 import Lightbox from '../components/lightbox';
@@ -9,7 +8,7 @@ export default function Salg() {
     const cardRefs = useRef([]);
     const [lightboxImages, setLightboxImages] = useState([]);
     const [isLightboxOpen, setLightboxOpen] = useState(false);
-    const [ setCurrentImageIndex] = useState(0);
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const [cards, setCards] = useState([]);
 
     useEffect(() => {
