@@ -1,5 +1,5 @@
 "use client";
-import React from 'react';
+
 import React, { useEffect, useRef, useState } from 'react';
 import Lightbox from '../components/lightbox';
 export default function Bil() {
