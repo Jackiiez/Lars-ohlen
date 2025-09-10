@@ -150,6 +150,80 @@ export default function Liverpool() {
 4 - 3 ‼️🐣💙⚽️</p>
 
       </div>
+
+
+{/* //////////////////////////////////////////////////////////////////////////// */}
+
+      <div ref={setCardRef(0)} data-index={0} className={`fif-content-div movie-card ${visibleCards.includes(0) ? 'visible' : ''}`}>
+
+        <hr />
+
+        <h2 className='posts-heading'>God minder💙💙</h2>
+        <Link href={"https://www.facebook.com/thomas.voss.923/posts/pfbid025FKZRJNTVQfSDMzTfidNrbDbURfzDZfN6EcLzfH8gLpKxZD69Ge2LBZrNnSndHNNl?rdid=FV8g1qpvDU9AE3HR#"}>
+          Klik her eller på billedet for at gå vidre til Postet</Link>
+        <Link href={"https://www.facebook.com/thomas.voss.923/posts/pfbid025FKZRJNTVQfSDMzTfidNrbDbURfzDZfN6EcLzfH8gLpKxZD69Ge2LBZrNnSndHNNl?rdid=FV8g1qpvDU9AE3HR#"}>
+          <img className='posts-img' src="minder.jpg" alt="" />
+        </Link><p className='posts-text'>🐣💙⚽️
+ ‼️🐣💙⚽️</p>
+
+      </div>
+      {/* //////////////////////////////////////////////////////////////////////////// */}
+
+      <div ref={setCardRef(0)} data-index={0} className={`fif-content-div movie-card ${visibleCards.includes(0) ? 'visible' : ''}`}>
+
+        <hr />
+
+        <h2 className='posts-heading'>Brøndby have fest💙💙</h2>
+
+ <video controls width="950">
+              <source src="bif-function.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+     
+
+       <p className='posts-text'>🐣💙⚽️
+ ‼️🐣💙⚽️</p>
+
+      </div>
+         <div ref={setCardRef(0)} data-index={0} className={`fif-content-div movie-card ${visibleCards.includes(0) ? 'visible' : ''}`}>
+
+        <hr />
+
+        <h2 className='posts-heading'>Danske mestre 2021💙💙</h2>
+
+ <video controls width="950">
+              <source src="danske-mestre1.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+             <video controls width="950">
+              <source src="danske-mestre2.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+             <video controls width="950">
+              <source src="danske-mestre3.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+             <video controls width="950">
+              <source src="danske-mestre4.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+             <video controls width="950">
+              <source src="danske-mestre5.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+             <video controls width="950">
+              <source src="danske-mestre6.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+             <video controls width="950">
+              <source src="danske-mestre7.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            
+     
+
+
+      </div>
            <Lightbox images={lightboxImages} isOpen={isLightboxOpen} onClose={closeLightbox} />
     </>
 

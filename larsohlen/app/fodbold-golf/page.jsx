@@ -312,7 +312,175 @@ export default function Fodboldgolf() {
             </Link>
           </div>
 
+          {/* ///////////////////////////// */}
+
+          <div ref={setCardRef(10)} data-index={10} className={`movie-card ${visibleCards.includes(10) ? 'visible' : ''}`}>
+            <p>Nordjysk fodboldgolf</p>
+            <p>* Dunja og jeg tager EM-sølv i mix-double
+* Dunja spiller det bedste fodboldgolf jeg nogensinde har set
+* Sætter alle pots i umulige og mulige vinkler
+* Er i "zonen" som var det et "Runners-High"
+* Faktisk kan jeg ikke kommunikere med hende under hele runden
+* Dunja brænder et langt første spark med venstre
+* Vender sig om og siger bare "Nu sætter du den!"
+* Bolden ligger i tyk rough 
+* Et sted vi aldrig har ligget før
+* og min højre fod tør ikke andet end at sætte den
+* faktisk fortjente vi guld 
+* Ronnie's kommentar bekræfter den gode runde ⚽️⛳️🕳🥈🥈🏆🇩🇰</p>
+
+
+            <Link href={"https://www.facebook.com/lars.ohlen.9/posts/pfbid02bLprnYJKd1KLYyj7qz4bVYgy5QTcxJvZ1BRsxgetY1ceLE9TtLGMC1sWYJi63fYBl?rdid=eYovtN6p8K3dERPb#"}>
+              <img className='fg-img' src="mix.jpg
+              " alt="" />
+            </Link>
+          </div>
+
+           {/* ///////////////////////////// */}
+
+          <div ref={setCardRef(10)} data-index={10} className={`movie-card ${visibleCards.includes(10) ? 'visible' : ''}`}>
+            <p>Danish-open winner 2024🏆</p>
+            <p>E N D E L I G Bo ❤️🏆🍾🥂🇩🇰
+Danish Open vindere 2024 🥇🥇
+</p><p>og sikke en dejlig weekend med skønne gæster herhjemme Andreea Cédric et Arnaud Arnold Schwarzenegger 💪🏻
+Dunja 2 x podie, også mig 😊 og bedste søndag af alle med minus 38😊🤩🥳 merci 🇫🇷🇩🇰</p>
+
+
+            <Link href={"https://www.facebook.com/lars.ohlen.9/posts/pfbid027Ac6VpSoVoNeQAckDbuNuLCWCWrrJmVjCEy1NjmFiQYwVwuVL7w4LCqu99BFDC7Tl?rdid=P3wSkfwMDNMvQ9V3#"}>
+              <img className='fg-img' src="danish-open24.jpg
+              " alt="" />
+            </Link>
+          </div>
+             {/* ///////////////////////////// */}
+
+          <div ref={setCardRef(10)} data-index={10} className={`movie-card ${visibleCards.includes(10) ? 'visible' : ''}`}>
+            <p>French-open 2024❤️🍾</p>
+         <p>🎤📹 Lars Ohlen 🇩🇰 had participated in the inauguration of the field a few months before the
+   French Open 2023 and took great pleasure in returning to this field that he loves 🥰</p>
+
+
+            <Link href={"https://www.facebook.com/auvergnefootgolf/posts/2707477136090603?rdid=y0sioWaSqO5HhZiz#"}>
+              <img className='fg-img' src="french-open24.png
+              " alt="" />
+            </Link>
+          </div>
+
+               {/* ///////////////////////////// */}
+
+          <div ref={setCardRef(10)} data-index={10} className={`movie-card ${visibleCards.includes(10) ? 'visible' : ''}`}>
+            <p>Danmarks-mesterskab bronze🍾</p>
+         <p>* DM bronze i double i Herning 202
+* Jeg sætter det afgørende put over 10 meter
+* Bolden går i vand, hvis jeg brænder
+* Det var FEDT ⚽️⛳️🕳</p>
+
+
+            <Link href={"https://www.facebook.com/danskfodboldgolfforening/posts/pfbid0ZwMbFLXWeYgrnqSu4Davi3gu9V9hAourMPqstxbZMXHs1j6dYQi5X528ytB3GW3Sl?rdid=GMG10n8odNZFNTwL#"}>
+              <img className='fg-img' src="dm-bronze.jpg
+              " alt="" />
+            </Link>
+          </div>
+              {/* ///////////////////////////// */}
+
+          <div ref={setCardRef(10)} data-index={10} className={`movie-card ${visibleCards.includes(10) ? 'visible' : ''}`}>
+            <p>Nummer 3 og nummer 5 den her sæson med min søn⚽️⛳️🕳</p>
+         <p>* Daniel bliver nr. 3 på årets rangliste 2023
+* Makker Bo bliver nr. 4
+* Jeg bliver nr. 5
+* Det kan noget ⚽️⛳️🕳</p>
+
+
+            <Link href={"https://www.facebook.com/Aber2750/posts/pfbid02SfuvyFkAUeUg67WV5nwPHWfSetzJdHTusUEzbcQjzAxtXk65JfGqhzMb9746wsbBl?rdid=MJtL7YgUILeYhEN6#"}>
+              <img className='fg-img' src="daniel-3.jpg
+              " alt="" />
+            </Link>
+          </div>
+                 {/* ///////////////////////////// */}
+
+          <div ref={setCardRef(10)} data-index={10} className={`movie-card ${visibleCards.includes(10) ? 'visible' : ''}`}>
+            <p>I går sluttede sæsonen, der blev ved med at gi’⚽️⛳️🕳️💪🏻🏆</p>
+         <p>* Verdensmester i 55+
+* Så mange skønne venskaber
+i 🇩🇰 og Europa, tak hver og en😊
+* Masser af skønne ture❤️
+* Hele 13 podier alt inkl 😃
+* DM sølv i double 🥈🥈🇩🇰
+….. og meget meget mere - glæder mig til 2024⚽️⛳️🕳️
+Glædelig jul og godt nytår 🎅🏻🎆😉</p>
+
+
+            <Link href={"https://www.facebook.com/lars.ohlen.9/posts/pfbid0252DS3kAQF9cF5oP6rRHwBPaFpcPZTWw9u7FR9cqFhwiJsGV7CCqLfDh2FCUXY3p1l?rdid=VELnxJSANRMNYWZ4#"}>
+              <img className='fg-img' src="seasonend.jpg
+              " alt="" />
+            </Link>
+          </div>
+
+            {/* ///////////////////////////// */}
+
+          <div ref={setCardRef(10)} data-index={10} className={`movie-card ${visibleCards.includes(10) ? 'visible' : ''}`}>
+            <p>DM sølv i double 🇩🇰🥈🥈</p>
+         <p>* DM sølv med Secher
+* 1 skud fra omspil om GULD
+* Til gengæld vinder vi så sølvet efter 6 hullers omspil !</p>
+
+
+            <Link href={"https://www.facebook.com/lars.ohlen.9/posts/pfbid0ZP92knX6ctHTZzcnHPFpGk6fDkcpVTsF39jvFwXJgfrcLptmi3z6vKnt95DG7qT3l?rdid=rnoR0rlKfaOfNAgG#"}>
+              <img className='fg-img' src="dmsølv.jpg
+              " alt="" />
+            </Link>
+          </div>
+
+               {/* ///////////////////////////// */}
+
+          <div ref={setCardRef(10)} data-index={10} className={`movie-card ${visibleCards.includes(10) ? 'visible' : ''}`}>
+            <p>Anden double sejr i Spanish Open Med Secher Lækker Lækker i 2023🏆</p>
+         
+
+
+            <Link href={"https://www.facebook.com/lars.ohlen.9/posts/pfbid0ZP92knX6ctHTZzcnHPFpGk6fDkcpVTsF39jvFwXJgfrcLptmi3z6vKnt95DG7qT3l?rdid=rnoR0rlKfaOfNAgG#"}>
+              <img className='fg-img' src="spanishopenvinder.jpg
+              " alt="" />
+            </Link>
+          </div>
+                     {/* ///////////////////////////// */}
+
+          <div ref={setCardRef(10)} data-index={10} className={`movie-card ${visibleCards.includes(10) ? 'visible' : ''}`}>
+            <p>LAS PÅ PODIET ⚽️⛳️🕳</p>
+                <p>* min karrieres første single podie
+* og nu har jeg stået der 22 gange i single
+* vintertour hulspil i Skejby 2021
+* faktisk tæt på at vinde
+* men jeg var mæt af at komme i 3-mandsfinalen
+* og derved så tilfreds med mit første podie</p>
+         
+
+
+            <Link href={"https://www.facebook.com/lars.ohlen.9/posts/pfbid021fiFGnynpWMxkJNWsFPsAmeuvmQTDCtw3uyBNK6RdBok8yd5cJJPETrTkjUCcbiZl?rdid=E7iK8l4NSwUivLvw#"}>
+              <img className='fg-img' src="podie.jpg
+              " alt="" />
+            </Link>
+          </div>
+
+
+            {/* ///////////////////////////// */}
+
+          <div ref={setCardRef(10)} data-index={10} className={`movie-card ${visibleCards.includes(10) ? 'visible' : ''}`}>
+            <p>Youx i Frankrig ⚽️⛳️🕳</p>
+                <p>Youx, Frankrig - Youx Love Footballgolf ❤️</p>
+         
+
+
+            <Link href={"https://www.facebook.com/cedric.caruana.9/posts/pfbid02drQvWLiKHh44Xr7JhDJo6m3Z5ZzwbpsX8Y95rspJ3sGw5RhxvWsZYydHo577t9ZHl?rdid=aNC6Bb9vsQMkQmHl#"}>
+              <img className='fg-img' src="youx.jpg
+              " alt="" />
+            </Link>
+          </div>
+
+
+
+
         </div>
+        
 
       </article>
       <Lightbox images={lightboxImages} isOpen={isLightboxOpen} onClose={closeLightbox} />
