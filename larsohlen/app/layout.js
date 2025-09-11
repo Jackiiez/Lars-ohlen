@@ -15,8 +15,9 @@ import "./style/bil.scss";
 import "./style/fodbold.scss";
 import "./style/salg.scss";
 import "./style/loeb.scss";
-import NavBar from "./components/NavBar";
+
 import Footer from "./components/footer";
+import NavBar from "./components/navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

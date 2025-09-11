@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types'; // Import PropTypes
-import '../style/lightbox.scss';
+import '../../style/lightbox.scss';
 
 const Lightbox = ({ images, isOpen, onClose }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
