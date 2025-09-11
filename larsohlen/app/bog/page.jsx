@@ -1,17 +1,17 @@
 "use client";
-import React, { useEffect, useRef, useState } from 'react';
+import React, {  useState } from 'react';
 import Lightbox from '../components/lightbox';
 import Link from "next/link";
 
 export default function Bog() {
-     const cardRefs = useRef([]);
+   
       const [lightboxImages, setLightboxImages] = useState([]);
       const [isLightboxOpen, setLightboxOpen] = useState(false);
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
 
 
-
+console.log(currentImageIndex)
 
 
       const openLightbox = (images, index) => {

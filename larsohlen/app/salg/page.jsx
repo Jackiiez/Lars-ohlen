@@ -1,16 +1,17 @@
 "use client"
 import Link from 'next/link';
-import { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import Lightbox from '../components/lightbox';
 
 
 export default function Salg() {
-    const cardRefs = useRef([]);
+   
     const [lightboxImages, setLightboxImages] = useState([]);
     const [isLightboxOpen, setLightboxOpen] = useState(false);
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const [cards, setCards] = useState([]);
 
+console.log(currentImageIndex)
     useEffect(() => {
         fetch('/salg.json')
             .then(response => response.json())

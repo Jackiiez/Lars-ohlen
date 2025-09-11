@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import React from "react"
 
 export default function Loeb() {
 
@@ -15,12 +15,13 @@ Drømmen var en gang at løbe samlet en gang rundt om jorden - 40.000 km</p>
 * Copenhagen Marathon på 2:58:54
 * Der var aldrig en krise undervejs. 
 * Jeg lagde dog for hårdt ud, hvilket er en klassiker
-* Det var "kun" min 4. maraton
+* Det var kun min 4. maraton
 * Jeg havde ikke taget løbetræner-uddannelsen endnu
 * og heller ikke fundet min guidance Jack Daniels Running Formular:
 
 <Link href={"https://www.saxo.com/dk/daniels-running-formula_jack-daniels_paperback_9781718203662?msclkid=377b5c9894c6158c9fb934e16c737476&utm_source=bing&utm_medium=cpc&utm_campaign=Standard%20Shopping%20%7C%20Engelsk&utm_term=4576442302288169&utm_content=Profitable"}>
-link til Daniels' Running Formula </Link>
+link til Daniels&apos; Running Formula </Link>
+
 
  <Link href={"https://www.facebook.com/lars.ohlen.9/posts/pfbid0gV5ZG1jtbFT1ACCKSLrSd3f1vrFNjioSe1r2rKwZwkunBDmd6KFXaeR37fFneXZfl?rdid=LLVkHqjMCmAxWE5T#"}>
  <img src="marton1.jpg" alt="" /></Link>
@@ -38,7 +39,7 @@ link til Daniels' Running Formula </Link>
 <p>* 1 km 2:58</p>
 <p>* New York Maraton i 1994</p>
 <p>* Berlin Maraton 3 stk.</p>
-<p>* Athen Marathon 2004 her løb vi på "blue-line" fra OL ruten i Athen 3 måneder før</p>
+<p>* Athen Marathon 2004 her løb vi på blue-line fra OL ruten i Athen 3 måneder før</p>
 <p>* DVS vi løb selv maraton ruten fra OL</p>
 <p>* Deltagelse i New York Marathon 1994</p>
 <p>* En sand løbefest</p>

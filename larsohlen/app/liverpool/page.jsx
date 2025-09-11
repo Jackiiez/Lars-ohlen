@@ -1,7 +1,7 @@
 "use client"
 import Link from 'next/link';
 import Lightbox from '../components/lightbox';
-import { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 export default function Liverpool() {
 
 
@@ -13,6 +13,7 @@ export default function Liverpool() {
 
 
 
+console.log(currentImageIndex)
 
 
       const openLightbox = (images, index) => {

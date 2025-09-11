@@ -10,6 +10,7 @@ export default function Galleri() {
   const cardRefs = useRef([]);
 
 
+console.log(currentImageIndex)
   const [visibleItems, setVisibleItems] = useState({});
 
   const setCardRef = (index) => (el) => {

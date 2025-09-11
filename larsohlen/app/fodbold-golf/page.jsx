@@ -1,7 +1,7 @@
 "use client";
 import Link from 'next/link';
 import Lightbox from '../components/lightbox';
-import { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 export default function Fodboldgolf() {
   const [visibleCards, setVisibleCards] = useState([]);
@@ -16,7 +16,7 @@ export default function Fodboldgolf() {
 
 
 
-
+console.log(currentImageIndex)
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -115,9 +115,9 @@ export default function Fodboldgolf() {
 
           <div ref={setCardRef(0)} data-index={0} className={`movie-card ${visibleCards.includes(0) ? 'visible' : ''}`}>
             <p>
-              *"Swedish Open 2022 jeg er i mit livs topform, har lige vundet Czeck Open og Danish <br />
+              *Swedish Open 2022 jeg er i mit livs topform, har lige vundet Czeck Open og Danish <br />
               Open i 55+ og her kommer Vibæk og jeg KÆMPE foran efter 9 af 36 huller. Det<br />
-              kunne vi ikke tåle og spillede os af podiet 😂😂🤣😢. To puts fra min fod - hul 1"
+              kunne vi ikke tåle og spillede os af podiet 😂😂🤣😢. To puts fra min fod - hul 1
             </p>
 
             <video controls width="500">
@@ -130,9 +130,9 @@ export default function Fodboldgolf() {
 
           <div ref={setCardRef(1)} data-index={1} className={`movie-card ${visibleCards.includes(1) ? 'visible' : ''}`}>
             <p>
-              *"Swedish Open 2022 jeg er i mit livs topform, har lige vundet Czeck Open og Danish <br />
+              *Swedish Open 2022 jeg er i mit livs topform, har lige vundet Czeck Open og Danish <br />
               Open i 55+ og her kommer Vibæk og jeg KÆMPE foran efter 9 af 36 huller. Det<br />
-              kunne vi ikke tåle og spillede os af podiet 😂😂🤣😢. To puts fra min fod - hul 3"
+              kunne vi ikke tåle og spillede os af podiet 😂😂🤣😢. To puts fra min fod - hul 3
             </p>
 
             <video controls width="500">
@@ -146,7 +146,7 @@ export default function Fodboldgolf() {
             <p>
               * En af nye bedste vennerne Thomas Skov Rasmussen:<br />
               * hjælper mig med at arrangere EM i Fodboldgolf<br />
-              * laver den vildeste "artikel" om international Fodboldgolf
+              * laver den vildeste artikel om international Fodboldgolf
             </p>
 
             <img className='fg-img' src="ven.jpg" alt="" onClick={() => openLightbox(['ven.jpg'], 0)} />
@@ -156,10 +156,10 @@ export default function Fodboldgolf() {
 
           <div ref={setCardRef(3)} data-index={3} className={`movie-card ${visibleCards.includes(3) ? 'visible' : ''}`}>
             <p>
-              "Maj 2022 andet stævne, hvor jeg også deltager i 55+.
+              Maj 2022 andet stævne, hvor jeg også deltager i 55+.
             </p>
             <p>Jeg vinder Czeck Open 2022 foran Strandberg og Niedermeyer,</p>
-            <p> som på samme bane i 2021 blev nr. 1 og 2 til VM i 55+"</p>
+            <p> som på samme bane i 2021 blev nr. 1 og 2 til VM i 55+</p>
 
             <img className='fg-img' src="czec.jpg" alt="" onClick={() => openLightbox(['czec.jpg'], 0)} />
           </div>
@@ -169,10 +169,10 @@ export default function Fodboldgolf() {
 
           <div ref={setCardRef(4)} data-index={4} className={`movie-card ${visibleCards.includes(4) ? 'visible' : ''}`}>
             <p>
-              "DM 2022 i Ørsted Ørredvand, nu Ørsted Outdoor. Jeg bliver nr. 4 efter at have ligget
+              DM 2022 i Ørsted Ørredvand, nu Ørsted Outdoor. Jeg bliver nr. 4 efter at have ligget
             </p>
             <p>nr. 3 til 6 over alle 4 runder i single. Har faktisk bronzen til hul 14 i finalerunden, men </p>
-            <p> 3 putter, hvor Secher sætter 1. put og så napper makker Secher bronzen"</p>
+            <p> 3 putter, hvor Secher sætter 1. put og så napper makker Secher bronzen</p>
 
             <img className='fg-img' src="dmorrsted2022.jpg" alt="" onClick={() => openLightbox(['dmorrsted2022.jpg'], 0)} />
           </div>
@@ -180,7 +180,7 @@ export default function Fodboldgolf() {
 
           <div ref={setCardRef(5)} data-index={5} className={`movie-card ${visibleCards.includes(5) ? 'visible' : ''}`}>
             <p>
-              "Juni 2022 vinder Danish Open 55+"
+              Juni 2022 vinder Danish Open 55+
             </p>
 
             <img className='fg-img' src="danishopen2022.jpg" alt="" onClick={() => openLightbox(['danishopen2022.jpg'], 0)} />
@@ -190,9 +190,9 @@ export default function Fodboldgolf() {
 
           <div ref={setCardRef(6)} data-index={6} className={`movie-card ${visibleCards.includes(6) ? 'visible' : ''}`}>
             <p>
-              "Vintertour marts 2023 jeg vinder omspillet om bronze over makker Vibæk. Daniel og
+              Vintertour marts 2023 jeg vinder omspillet om bronze over makker Vibæk. Daniel og
             </p>
-            <p>jeg står på samme podie som nr. 1 og 3 i Odsherred Eventen" </p>
+            <p>jeg står på samme podie som nr. 1 og 3 i Odsherred Eventen </p>
 
 
             <img className='fg-img' src="vintertour2023.jpg" alt="" onClick={() => openLightbox(['vintertour2023.jpg'], 0)} />
@@ -209,7 +209,7 @@ export default function Fodboldgolf() {
 
 
           <div ref={setCardRef(8)} data-index={8} className={`movie-card ${visibleCards.includes(8) ? 'visible' : ''}`}>
-            <p>Med indunder Ørsted Outdoor - måske du har lagt dem over på Sponsorsiden nu, værs'go:</p>
+            <p>Med indunder Ørsted Outdoor - måske du har lagt dem over på Sponsorsiden nu, værsgo:</p>
             <Link href={"https://www.facebook.com/lars.ohlen.9/posts/pfbid02zjsTWtdqYKhSew6ryrUjwyVvAc5GND3ho3XYUEKULaEgFGYypU9irEWNg1aEtRJ4l?rdid=qfmmx32NNGgoifEP#"}>
               <img className='fg-img' src="fodboldcamp.jpg" alt="" onClick={() => openLightbox(['fodboldcamp.jpg'], 0)} />
             </Link>
@@ -319,15 +319,15 @@ export default function Fodboldgolf() {
             <p>* Dunja og jeg tager EM-sølv i mix-double
 * Dunja spiller det bedste fodboldgolf jeg nogensinde har set
 * Sætter alle pots i umulige og mulige vinkler
-* Er i "zonen" som var det et "Runners-High"
+* Er i zonen som var det et Runners-High
 * Faktisk kan jeg ikke kommunikere med hende under hele runden
 * Dunja brænder et langt første spark med venstre
-* Vender sig om og siger bare "Nu sætter du den!"
+* Vender sig om og siger bare Nu sætter du den!
 * Bolden ligger i tyk rough 
 * Et sted vi aldrig har ligget før
 * og min højre fod tør ikke andet end at sætte den
 * faktisk fortjente vi guld 
-* Ronnie's kommentar bekræfter den gode runde ⚽️⛳️🕳🥈🥈🏆🇩🇰</p>
+* Ronnies kommentar bekræfter den gode runde ⚽️⛳️🕳🥈🥈🏆🇩🇰</p>
 
 
             <Link href={"https://www.facebook.com/lars.ohlen.9/posts/pfbid02bLprnYJKd1KLYyj7qz4bVYgy5QTcxJvZ1BRsxgetY1ceLE9TtLGMC1sWYJi63fYBl?rdid=eYovtN6p8K3dERPb#"}>
@@ -354,7 +354,7 @@ Dunja 2 x podie, også mig 😊 og bedste søndag af alle med minus 38😊🤩�
              {/* ///////////////////////////// */}
 
           <div ref={setCardRef(10)} data-index={10} className={`movie-card ${visibleCards.includes(10) ? 'visible' : ''}`}>
-            <p>French-open 2024❤️🍾</p>
+            <p>French-open 2024🍾</p>
          <p>🎤📹 Lars Ohlen 🇩🇰 had participated in the inauguration of the field a few months before the
    French Open 2023 and took great pleasure in returning to this field that he loves 🥰</p>
 
@@ -398,14 +398,14 @@ Dunja 2 x podie, også mig 😊 og bedste søndag af alle med minus 38😊🤩�
                  {/* ///////////////////////////// */}
 
           <div ref={setCardRef(10)} data-index={10} className={`movie-card ${visibleCards.includes(10) ? 'visible' : ''}`}>
-            <p>I går sluttede sæsonen, der blev ved med at gi’⚽️⛳️🕳️💪🏻🏆</p>
+            <p>I går sluttede sæsonen, der blev ved med at gi{"⚽️⛳️🕳️"}💪🏻🏆</p>
          <p>* Verdensmester i 55+
 * Så mange skønne venskaber
 i 🇩🇰 og Europa, tak hver og en😊
 * Masser af skønne ture❤️
 * Hele 13 podier alt inkl 😃
 * DM sølv i double 🥈🥈🇩🇰
-….. og meget meget mere - glæder mig til 2024⚽️⛳️🕳️
+ og meget meget mere - glæder mig til 2024{"⚽️⛳️🕳️"}
 Glædelig jul og godt nytår 🎅🏻🎆😉</p>
 
 

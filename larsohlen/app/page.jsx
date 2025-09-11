@@ -1,7 +1,7 @@
 "use client";
-import { useState, useEffect, useRef } from 'react';
+import React,  { useState, useEffect, useRef } from 'react';
 import Lightbox from './components/lightbox';
-import Link from 'next/link';
+
 
 export default function Home() {
   const [visibleCards, setVisibleCards] = useState([]);
@@ -28,7 +28,8 @@ export default function Home() {
       .catch(error => console.error('Error fetching cards:', error));
   }, []);
 
-
+console.log(cards)
+console.log(currentImageIndex)
 
   
   // Animation on load for video cards

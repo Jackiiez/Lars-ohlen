@@ -1,14 +1,14 @@
 "use client";
-import React, { useEffect, useRef, useState } from 'react';
+import React, {  useState } from 'react';
 import Lightbox from '../components/lightbox';
 export default function Bil() {
-  const cardRefs = useRef([]);
+
   const [lightboxImages, setLightboxImages] = useState([]);
   const [isLightboxOpen, setLightboxOpen] = useState(false);
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);//
 
 
-
+console.log(currentImageIndex)
 
 
 

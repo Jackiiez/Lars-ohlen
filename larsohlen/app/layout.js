@@ -1,4 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import React from "react";
+import PropTypes from "prop-types"; // Import PropTypes
 import "./style/nav.scss";
 import "./style/globals.css";
 import "./style/hero.scss";
@@ -35,11 +37,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-          <link href="https://fonts.googleapis.com/css2?family=Segoe:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-        <NavBar/>
+        <link href="https://fonts.googleapis.com/css2?family=Segoe:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+        <NavBar />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );
 }
+
+// Add PropTypes validation
+RootLayout.propTypes = {
+  children: PropTypes.node.isRequired, // Validate that children is a required node
+};
