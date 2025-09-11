@@ -1,23 +1,23 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import React from "react";
 import PropTypes from "prop-types"; // Import PropTypes
-import "./style/nav.scss";
-import "./style/globals.css";
-import "./style/hero.scss";
-import "./style/sponsors.scss";
-import "./style/lightbox.scss";
-import "./style/gallery.scss";
-import "./style/bog.scss";
-import "./style/baner.scss";
-import "./style/fodboldgolf.scss";
-import "./style/fif.scss";
-import "./style/bil.scss";
-import "./style/fodbold.scss";
-import "./style/salg.scss";
-import "./style/loeb.scss";
+import "../style/nav.scss";
+import "../style/globals.css";
+import "../style/hero.scss";
+import "../style/sponsors.scss";
+import "../style/lightbox.scss";
+import "../style/gallery.scss";
+import "../style/bog.scss";
+import "../style/baner.scss";
+import "../style/fodboldgolf.scss";
+import "../style/fif.scss";
+import "../style/bil.scss";
+import "../style/fodbold.scss";
+import "../style/salg.scss";
+import "../style/loeb.scss";
 
-import Footer from "./components/footer";
-import NavBar from "./components/navbar";
+import Footer from "../components/footer";
+import NavBar from "../components/navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

@@ -1,9 +1,9 @@
 "use client"
 import Link from 'next/link';
 
-import Lightbox from '../../components/lightbox';
+import Lightbox from '../../../components/lightbox';
 import React, { useEffect, useRef, useState } from 'react';
-import Video from '../../components/jackie';
+import Video from '../../../components/jackie';
 export default function Fif() {
 
 
