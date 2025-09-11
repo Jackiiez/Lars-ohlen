@@ -1,6 +1,6 @@
 "use client";
 import React, {  useState } from 'react';
-import Lightbox from '../components/lightbox';
+import Lightbox from '../../components/lightbox';
 export default function Bil() {
 
   const [lightboxImages, setLightboxImages] = useState([]);

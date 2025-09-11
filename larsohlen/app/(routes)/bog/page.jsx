@@ -1,6 +1,6 @@
 "use client";
 import React, {  useState } from 'react';
-import Lightbox from '../components/lightbox';
+import Lightbox from '../../components/lightbox';
 import Link from "next/link";
 
 export default function Bog() {

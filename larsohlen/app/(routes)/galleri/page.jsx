@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useRef, useState } from 'react';
-import Lightbox from '../components/lightbox';
+import Lightbox from '../../components/lightbox';
 
 export default function Galleri() {
   const [sections, setGalleryItems] = useState([]);
